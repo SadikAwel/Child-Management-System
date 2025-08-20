@@ -1,0 +1,241 @@
+#header-email-box {
+  background-color: rgb(24, 52, 88);
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 6vh;
+  width: 100vw;
+  position: fixed;
+  box-shadow: 10px 0px 2px black;
+  z-index: 3;
+}
+
+.loginanim {
+  transition-duration: 1ms;
+}
+#header-email-box span {
+  background-color: rgb(200, 198, 55);
+  padding-left: 3vw;
+  padding-right: 3vw;
+  display: flex;
+  align-items: center;
+  height: 4vh;
+  border-radius: 20px;
+}
+
+.spacerforheader {
+  height: 6vh;
+  background-color: rgba(84, 77, 91, 0.788);
+}
+.mainHeaderPage {
+  height: 90vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.947), rgba(22, 20, 20, 0.336)),
+    url("../../pexels-marta-wave-6437805.jpg");
+  display: flex;
+  flex-direction: column;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  box-shadow: 1px 1px 34px rgba(53, 42, 42, 0.573);
+  border-radius: 10px;
+  gap: 150px;
+}
+
+.mainHeaderPage .Logo {
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  height: 20vh;
+  align-items: center;
+}
+.mainHeaderPage .Logo span {
+  font-size: 74px;
+  text-align: center;
+  color: yellow;
+}
+.mainHeaderPage .Logo span {
+  flex: 1;
+}
+
+.mainHeaderPage .Logo ul {
+  flex: 2;
+  display: flex;
+  gap: 1px;
+  font-size: large;
+  list-style: none;
+  text-decoration: none;
+  justify-content: end;
+  padding-right: 20px;
+}
+
+.mainHeaderPage .Logo ul li {
+  margin-left: 3%;
+  box-shadow: 1px 4px 12px rgba(178, 167, 167, 0.541);
+  width: fit-content;
+  padding: 8px 15px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.mainHeaderPage .Logo ul li:hover {
+  box-shadow: 1px 4px 15px rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-3px);
+}
+.mainHeaderPage .Logo ul li a {
+  list-style: none;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.77);
+}
+.headerDescription {
+  margin-bottom: 227px;
+}
+.headerDescription p {
+  text-align: center;
+  max-width: 600px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  color: #ffffff;
+  line-height: 1.6;
+  margin: 0 auto;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+/* vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv */
+
+/* Navigation styles */
+nav {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+} */
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Login button styles */
+.login-btn {
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #3a5bef00;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: fixed;
+  right: -34px;
+  top: 40px;
+  background-color: rgba(255, 255, 255, 0.329);
+  min-width: 200px;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  margin-top: 5px;
+  overflow: hidden;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.2s;
+  font-weight: 500;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.dropdown-content a:last-child {
+  border-bottom: none;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: rgb(24, 52, 88);
+  color: #a97622;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content:hover {
+  display: block !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .dropdown-content {
+    min-width: 180px;
+  }
+
+  .dropdown-content a {
+    padding: 10px 14px;
+    font-size: 14px;
+  }
+}
+
+#idname span {
+  color: #f7f4f4;
+  font-size: 1.5rem;
+  padding-left: 23px;
+  text-align: left;
+  box-shadow: -3px -1px 3px rgb(249, 253, 255);
+}
+
+#containerForName {
+  margin-left: 23px;
+  position: absolute;
+  background: linear-gradient(rgb(48, 70, 94), rgb(62, 97, 93));
+  width: 27%;
+  box-shadow: 2px 3px 23px white;
+}
+
+#idname {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+#containerForName h2 {
+  color: #7d4e4e;
+  font-size: 2.3wrem;
+  text-align: center;
+  box-shadow: -3px -1px 3px rgb(249, 253, 255);
+}

@@ -1,0 +1,96 @@
+.mainfieldarea {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(242, 238, 235, 0.992);
+  width: 40%;
+  height: 75vh;
+  border-radius: 10px;
+  margin-left: 3vw;
+  margin-top: -45px;
+  margin-bottom: 25px;
+  padding-left: 15px;
+}
+.mainfieldarea h1 {
+  font-size: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-align: center;
+  margin: 2vh;
+}
+.mainfieldarea form {
+  margin-top: 3vh;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 3vh;
+}
+.mainfieldarea form div input,
+label,
+select {
+  width: 90%;
+  margin: 0.4vh;
+  height: 4vh;
+  font-size: 1.2rem;
+  border-radius: 6px;
+}
+
+.mainHeaderPage {
+  gap: 18px;
+}
+
+.boxofmainfieldarea {
+  position: relative;
+  box-shadow: 1px 12px 12px rgb(114, 120, 105);
+  display: flex;
+
+  width: 100%;
+  height: 75vh;
+}
+.boxofmainfieldarea > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  margin-bottom: 25%;
+}
+.boxofmainfieldarea > div p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 40px;
+  color: aliceblue;
+}
+.boxofmainfieldarea > div h1 {
+  position: absolute;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 15rem;
+  color: rgba(196, 205, 21, 0.2);
+}
+
+#signinformsubmitbutton {
+  background-color: gold;
+  height: 33px;
+  width: 104px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.2rem;
+  box-shadow: 1px 1px 10px rgba(61, 48, 48, 0.763);
+  margin: auto;
+}
+
+#signinformsubmitbutton:hover {
+  background-color: rgb(230, 197, 10);
+  margin-bottom: 34%;
+  border: none;
+  font-size: 1.2rem;
+  box-shadow: 1px 1px 10px rgba(154, 147, 147, 0.763);
+}
+
+.dropdown-content a:hover {
+  background-color: #29446c;
+  color: #a97622;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content:hover {
+  display: block;
+}

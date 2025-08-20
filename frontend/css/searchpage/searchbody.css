@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  background-color: #f0f2f5;
+  color: #333;
+}
+.spacerforheader {
+  height: 2vh;
+  background-color: rgba(84, 77, 91, 0);
+}
+#mainbodyforsearch {
+  height: 87%;
+}
+
+.mainHeaderPage {
+  height: 90vh;
+  background: linear-gradient(rgba(8, 24, 32, 0.781), rgba(16, 15, 15, 0.868)),
+    url("../../gallery/mentor-770x513.jpg");
+  display: flex;
+  flex-direction: column;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  box-shadow: 1px 1px 34px rgba(53, 42, 42, 0.573);
+  border-radius: 10px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.search-header {
+  padding: 15px;
+  background-color: #2c3e50;
+  color: white;
+  position: relative;
+}
+
+.search-header h2 {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.search-box {
+  margin: 15px;
+  position: relative;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 12px 15px 12px 40px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f0f2f5;
+  font-size: 15px;
+  outline: none;
+}
+
+.search-box::before {
+  content: "🔍";
+  position: absolute;
+  left: 15px;
+  top: 12px;
+  font-size: 16px;
+  color: #777;
+}
+
+.student-list {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.student-card {
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
+  border-bottom: 1px solid #eaeaea;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  text-decoration: none;
+  color: inherit;
+}
+
+.student-card:hover {
+  background-color: #f5f5f5;
+}
+
+.profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #e0e0e0;
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #555;
+  overflow: hidden;
+}
+
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.student-info {
+  flex: 1;
+}
+
+.student-name {
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 3px;
+}
+
+.student-details {
+  display: flex;
+  font-size: 14px;
+  color: #777;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.student-grade {
+  padding: 2px 6px;
+  border-radius: 4px;
+  background-color: #e3f2fd;
+  color: #1976d2;
+  font-weight: 500;
+}
+
+.student-age {
+  padding: 2px 6px;
+  border-radius: 4px;
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  font-weight: 500;
+}
+
+.student-location {
+  display: flex;
+  align-items: center;
+}
+
+.student-location::before {
+  content: "📍";
+  margin-right: 3px;
+  font-size: 12px;
+}
+
+.action-buttons {
+  display: flex;
+  padding: 15px;
+  justify-content: space-between;
+  border-top: 1px solid #eaeaea;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-prev {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.btn-next {
+  background-color: #0088cc;
+  color: white;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}

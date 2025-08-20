@@ -1,0 +1,227 @@
+.body {
+  display: grid;
+  grid-template-columns: 15% auto;
+}
+
+#header-email-box span {
+  background-color: rgb(200, 198, 55);
+  padding-left: 3vw;
+  padding-right: 3vw;
+  display: flex;
+  align-items: center;
+  height: 4vh;
+  border-radius: 20px;
+}
+
+.search-form {
+  display: flex;
+  margin-left: 15%;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  overflow: hidden;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-input {
+  flex-grow: 1;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.search-button {
+  background: #fff;
+  border: none;
+  padding: 0 15px;
+  cursor: pointer;
+  color: #555;
+  transition: color 0.2s ease;
+}
+
+.search-button:hover {
+  color: #007bff;
+}
+
+#header-email-box {
+  grid-column: 1 / span 2;
+  background-color: #2c3e50;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 6vh;
+  padding-right: 3%;
+  width: 100%;
+  position: fixed;
+  box-shadow: 10px 0px 2px black;
+  z-index: 3;
+}
+
+.mainHeaderPage {
+  height: 90vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.58), rgba(22, 20, 20, 0.545)),
+    url("../../gallery/mentor-770x513.jpg");
+  display: flex;
+  flex-direction: column;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  box-shadow: 1px 1px 34px rgba(53, 42, 42, 0.573);
+  border-radius: 10px;
+}
+
+.mainHeaderPage .Logo {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  height: 20vh;
+  align-items: center;
+}
+.mainHeaderPage .Logo span {
+  font-size: 74px;
+  text-align: center;
+  color: yellow;
+}
+.mainHeaderPage .Logo span {
+  flex: 1;
+}
+
+.mainHeaderPage .Logo ul {
+  flex: 2;
+  display: flex;
+  gap: 1px;
+  font-size: large;
+  list-style: none;
+  text-decoration: none;
+  justify-content: end;
+  padding-right: 50px;
+}
+
+.mainHeaderPage .Logo ul li {
+  margin-left: 3%;
+  box-shadow: 1px 4px 12px rgba(178, 167, 167, 0.541);
+  width: fit-content;
+  padding: 8px 15px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.mainHeaderPage .Logo ul li:hover {
+  box-shadow: 1px 4px 15px rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-3px);
+}
+.mainHeaderPage .Logo ul li a {
+  list-style: none;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.77);
+}
+
+.headerDescription p {
+  text-align: center;
+  max-width: 600px;
+  font-family: "Poppins", sans-serif;
+  /* Consistent font */
+  font-size: 1.5rem;
+  color: #ffffff;
+  line-height: 1.6;
+  margin: 0 auto;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+#sideFrame {
+  background-color: #2c3e50;
+  display: relative;
+  position: fixed;
+  width: 100%;
+}
+
+#sideFrame ul li {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  font-style: none;
+}
+
+.side {
+  background-color: #ffffffeb;
+}
+
+.mainHeaderPage {
+  background-color: aquamarine;
+}
+
+.footer {
+  width: 120%;
+  padding: 0px;
+}
+
+#sideFrame {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 230px;
+  height: 100vh;
+  background-color: #2c3e50;
+  padding-top: 4rem;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 3;
+}
+
+#sideFrame ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#sideFrame li {
+  margin-bottom: 0.5rem;
+}
+
+#sideFrame a {
+  display: block;
+  color: #ecf0f1;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 1rem 1.5rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 8px;
+  margin: 0 0.5rem;
+}
+
+#sideFrame a:hover,
+#sideFrame a:focus {
+  color: #34495e;
+
+  outline: none;
+}
+
+#sideFrame a:focus {
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.5);
+}
+
+#sideFrame button {
+  display: block;
+  width: calc(100% - 1rem);
+  margin: 1.5rem 0.5rem;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.1rem;
+  color: #fff;
+  background-color: #e74c3c;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#sideFrame button:hover,
+#sideFrame button:focus {
+  background-color: #c0392b;
+  transform: translateY(-2px);
+  outline: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

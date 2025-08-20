@@ -1,0 +1,31 @@
+.mainHeaderPage {
+  height: 90vh;
+  background: linear-gradient(rgba(5, 5, 5, 0.415), rgba(22, 20, 20, 0.656), rgba(0, 0, 0, 0.442)),
+    url("../../gallery/image-109.jpeg");
+  display: flex;
+  flex-direction: column;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  box-shadow: 1px 1px 34px rgba(53, 42, 42, 0.573);
+  border-radius: 10px;
+  gap: 150px;
+}
+
+#watermarkforhope {
+  font-family: "Times New Roman", Times, serif;
+  color: rgba(236, 231, 225, 0.803);
+  font-size: 100px;
+  font-weight: 600;
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  z-index: 1;
+}
+
+#watermarkforhope + p {
+  font-family: "Times New Roman", Times, serif;
+  color: rgba(255, 0, 0, 0.245);
+  z-index: 3;
+  font-size: 50px;
+}
