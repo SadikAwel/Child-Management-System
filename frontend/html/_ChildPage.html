@@ -6,50 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/childpage/childpageheader.css">
     <link rel="stylesheet" href="../css/childpage/childpagebody.css">
+    <link rel="stylesheet" href="../css/childpage/childpageheader.css">
     <link rel="stylesheet" href="../css/bootstrap.css">
-    <title>Child managment system</title>
+    <link rel="stylesheet" href="../css/teacher/teacherHeader.css">
+    <link rel="stylesheet" href="../css/teacher/teacherBody.css">
+
+    <title>Hope-Child page</title>
+    <style>
+        .container {
+            background-color: rgba(232, 240, 14, 0.57);
+
+        }
+    </style>
+
+
 </head>
 
 <body>
 
-    <header id="header-email-box">
+    <header class="header-email-box">
         <span>email: childmanagmentsystem@gmail.com
 
         </span>
 
     </header>
 
+
+
     <div class="spacerforheader"></div>
-    <section class="mainHeaderPage">
+    <section class="mainHeaderPagea ">
 
 
-        <div class="Logo">
-
-            <span>
-                <p>HOPE</p>
-            </span>
-
-            <ul>
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="#dsfsdfsdfsdfsdfsf">Activites</a></li>
-                <li><a href="#dsfsdfsdfsdddfdffd">Games</a></li>
-                <li><a href="../html/generated/help.html">Help</a></li>
-                <li><a href="#dfdfdfsdfsdfdf">Contact</a></li>
-                <li><a href="../../index.html" class="loginanim">Log Out</a></li>
 
 
-            </ul>
-        </div>
+
+        <div class="Logo navbar navbar-expand-md">
+            <div class="container">
+                <span>
+                    <p>HOPE</p>
+                </span>
+                <button class="toggle navbar-toggler" data-bs-toggle="collapse" data-bs-target=" #thisforteachernav">
+                    <div class="navbar-toggler-icon" title="nav"></div>
+                </button>
+                <div class="collapse navbar-collapse" id="thisforteachernav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="../../index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#dsfsdfsdfsdfsdfsf">Activites</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#dsfsdfsdfsdddfdffd">Games</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../html/generated/help.html">Help</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#dfdfdfsdfsdfdf">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../index.html" class="loginanim">Log Out</a>
+                        </li>
 
 
-        <div class="headerDescription">
-
-            <p id="watermarkforhope">
-                Build Your Future!
-            </p>
-
+                    </ul>
+                </div>
+            </div>
         </div>
 
     </section>
@@ -57,7 +70,9 @@
 
     <section id="dsfsdfsdfsdfsdfsf" class="todayActivityForChild">
         <div class="titleforsection">
-            <h2>🎉 Today’s Fun Activities 🎉</h2>
+            <h2> Today’s Fun Activities </h2><a href="./childfromdeep.html">
+                <h5>Change Theme</h5>
+            </a>
         </div>
 
         <div class="mainclassbodyfortodayactivity">
@@ -207,7 +222,7 @@
 
 
 
-
+    <script src="../js/bootstrap.js"></script>
 
 </body>
 

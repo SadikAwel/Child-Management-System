@@ -4,284 +4,306 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/teacher/teacherHeader.css">
     <link rel="stylesheet" href="../css/teacher/teacherBody.css">
-    <link rel="stylesheet" href="../css/searchpage/searchbody.css">
     <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/searchpage/searchbody.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
 
-    <title>Child managment system</title>
+
+    <title>Hope-search</title>
 </head>
 
 <body>
-    <header id="header-email-box">
+    <header class="header-email-box">
         <span>email: childmanagmentsystem@gmail.com
 
         </span>
 
     </header>
-    <div class="spacerforheader"></div>
-    <div class="body">
 
-        <div class="side">
-            <aside id="sideFrame">
-                <ul>
-                    <li><a href="../html/_T_AddActivity.html">Add child Progress</a></li>
-                    <li><a href="../html/_T_childprofilepage.html">See child Progress</a></li>
-                    <li> <button onclick="window.history.back()">Back</button></li>
-                </ul>
+    <button class="toggle navbar-toggler start-0 position-absolue" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasScrollingaa" title="Navigation">
+        <img src="../gallery/10055595.png" alt="navbar" class="imgfornavbar" title="Navigation"></button>
 
-            </aside>
+
+
+    <div class="offcanvas offcanvas-start bg-favorite-color" data-bs-scroll="true" data-bs-backdrop="false"
+        tabindex="-1" id="offcanvasScrollingaa" aria-labelledby="offcanvasScrollingLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Navigation</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <main class="bodymain">
+        <div class="offcanvas-body" id="sideFrame">
+            <ul>
+                <li><a href="../html/_T_AddActivity.html">Add child Progress</a>
+                    <hr>
+                </li>
+                <li><a href="../html/_T_childprofilepage.html">See child Progress</a>
+                    <hr>
+                </li>
+                <li> <button onclick="window.history.back()">Back</button></li>
+            </ul>
+        </div>
+    </div>
 
 
-            <div class="spacerforheader"></div>
-            <section class="mainHeaderPage">
 
 
-                <div class="Logo">
+    <div class="spacerforheader"></div>
 
-                    <span>
-                        <p>HOPE</p>
-                    </span>
 
-                    <ul>
-                        <li><a href="../../index.html">Home</a></li>
-                        <li><a href="../html/generated/service.html">Service</a></li>
-                        <li><a href="#werdsfsdfdfkk">Contact</a></li>
-                        <li><a href="../html/generated/help.html">Help</a></li>
-                        <li><a href="../../index.html" class="loginanim">Log Out</a></li>
+    <div class="spacerforheader"></div>
+    <section class="mainHeaderPage">
+        <div class="Logo navbar navbar-expand-md">
+            <div class="container-fluid">
+                <span>
+                    <p>HOPE</p>
+                </span>
+                <button class="toggle navbar-toggler ms-auto" data-bs-toggle="collapse"
+                    data-bs-target=" #thisforteachernavaa" title="nav">
+                    <div class="navbar-toggler-icon"></div>
+                </button>
+                <div class="collapse navbar-collapse" id="thisforteachernavaa">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="../../index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../html/generated/service.html">Service</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#werdsfsdfdfkk">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../html/generated/help.html">Help</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../index.html" class="loginanim">Log
+                                Out</a>
+                        </li>
 
 
                     </ul>
                 </div>
+            </div>
+        </div>
 
-                <form action="../html/_T_searchpage.html" method="get" class="search-form">
-                    <input type="text" placeholder="Search..." name="q" class="search-input">
-                    <button type="submit" class="search-button" title="submit">
-                        <!-- SVG for the magnifying glass icon -->
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M19 19L13 13M15 8C15 11.866 11.866 15 8 15C4.13401 15 1 11.866 1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8Z"
-                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </button>
-                </form>
+        <form action="../html/_T_searchpage.html" method="get" class="search-form">
+            <input type="text" placeholder="Search..." name="q" class="search-input">
+            <button type="submit" class="search-button" title="submit">
+                <!-- SVG for the magnifying glass icon -->
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M19 19L13 13M15 8C15 11.866 11.866 15 8 15C4.13401 15 1 11.866 1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8Z"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+        </form>
 
-                <main id="mainbodyforsearch">
-                    <div class="container">
-                        <div class="search-header">
-                            <h2>Search Students</h2>
+        <main id="mainbodyforsearch">
+            <div class="container">
+                <div class="search-header">
+                    <h2>Search Students</h2>
+                </div>
+
+                <div class="search-box">
+                    <input type="text" placeholder="Search students...">
+                </div>
+
+                <div class="student-list">
+                    <a href="../html/_T_childprofilepage.html" class="student-card">
+                        <div class="profile-pic">
+                            <img src="../gallery/profile/OIP.webp" alt="Abebe">
                         </div>
-
-                        <div class="search-box">
-                            <input type="text" placeholder="Search students...">
-                        </div>
-
-                        <div class="student-list">
-                            <a href="../html/_T_childprofilepage.html" class="student-card">
-                                <div class="profile-pic">
-                                    <img src="../gallery/profile/OIP.webp" alt="Abebe">
-                                </div>
-                                <div class="student-info">
-                                    <div class="student-name">Abebe Kebede</div>
-                                    <div class="student-details">
-                                        <span class="student-grade">Grade 7</span>
-                                        <span class="student-age">13 years</span>
-                                        <span class="student-location">Addis Ababa</span>
-                                    </div>
-                                </div>
-                            </a>
-
-                            <a href="../html/_T_childprofilepage.html" class="student-card">
-                                <div class="profile-pic">
-                                    <img src="../gallery/profile/large-portrait-little-girl-years-old-brown-eyes-dark-blond-hair-two-tails-light-sweater-multi-colored-polka-dots-199065591.webp"
-                                        alt="Meron">
-                                </div>
-                                <div class="student-info">
-                                    <div class="student-name">Meron Tesfaye</div>
-                                    <div class="student-details">
-                                        <span class="student-grade">Grade 5</span>
-                                        <span class="student-age">11 years</span>
-                                        <span class="student-location">Bahir Dar</span>
-                                    </div>
-                                </div>
-                            </a>
-
-                            <a href="../html/_T_childprofilepage.html" class="student-card">
-                                <div class="profile-pic">
-                                    <img src="../gallery/profile/OIP (1).webp" alt="Tewodros">
-                                </div>
-                                <div class="student-info">
-                                    <div class="student-name">Tewodros Assefa</div>
-                                    <div class="student-details">
-                                        <span class="student-grade">Grade 6</span>
-                                        <span class="student-age">12 years</span>
-                                        <span class="student-location">Gondar</span>
-                                    </div>
-                                </div>
-                            </a>
-
-                            <a href="../html/_T_childprofilepage.html" class="student-card">
-                                <div class="profile-pic">
-                                    <img src="../gallery/kids-using-gadgets-tablet-pc-600nw-1841220493.webp"
-                                        alt="Selam">
-                                </div>
-                                <div class="student-info">
-                                    <div class="student-name">Selamawit Girma</div>
-                                    <div class="student-details">
-                                        <span class="student-grade">Grade 4</span>
-                                        <span class="student-age">10 years</span>
-                                        <span class="student-location">Hawassa</span>
-                                    </div>
-                                </div>
-                            </a>
-
-                            <a href="../html/_T_childprofilepage.html" class="student-card">
-                                <div class="profile-pic">
-                                    <img src="../gallery/profile/OIP (1).webp" alt="Yohannes">
-                                </div>
-                                <div class="student-info">
-                                    <div class="student-name">Yohannes Mekonnen</div>
-                                    <div class="student-details">
-                                        <span class="student-grade">Grade 3</span>
-                                        <span class="student-age">9 years</span>
-                                        <span class="student-location">Mekelle</span>
-                                    </div>
-                                </div>
-                            </a>
-
-                            <a href="../html/_T_childprofilepage.html" class="student-card">
-                                <div class="profile-pic">
-                                    <img src="../gallery/profile/OIP.webp" alt="Alem">
-                                </div>
-                                <div class="student-info">
-                                    <div class="student-name">Alemnesh Demisse</div>
-                                    <div class="student-details">
-                                        <span class="student-grade">Grade 2</span>
-                                        <span class="student-age">8 years</span>
-                                        <span class="student-location">Dire Dawa</span>
-                                    </div>
-                                </div>
-                            </a>
-
-                            <a href="../html/_T_childprofilepage.html" class="student-card">
-                                <div class="profile-pic">
-                                    <img src="../gallery/profile/beautiful-asian-girl-smiling_393744-2618.jpg"
-                                        alt="Dawit">
-                                </div>
-                                <div class="student-info">
-                                    <div class="student-name">Dawit Solomon</div>
-                                    <div class="student-details">
-                                        <span class="student-grade">Grade 1</span>
-                                        <span class="student-age">7 years</span>
-                                        <span class="student-location">Jimma</span>
-                                    </div>
-                                </div>
-                            </a>
-
-                            <a href="../html/_T_childprofilepage.html" class="student-card">
-                                <div class="profile-pic">
-                                    <img src="../gallery/profile/asian-girls-education-happy-beautiful-asian-girl-is-smilling-generative-ai_947762-3120.avif"
-                                        alt="Eyerus">
-                                </div>
-                                <div class="student-info">
-                                    <div class="student-name">Eyerus Alemayehu</div>
-                                    <div class="student-details">
-                                        <span class="student-grade">Grade 6</span>
-                                        <span class="student-age">12 years</span>
-                                        <span class="student-location">Adama</span>
-                                    </div>
-                                </div>
-                            </a>
-
-                            <a href="../html/_T_childprofilepage.html" class="student-card">
-                                <div class="profile-pic">
-                                    <img src="../gallery/profile/large-portrait-little-girl-years-old-brown-eyes-dark-blond-hair-two-tails-light-sweater-multi-colored-polka-dots-199065591.webp"
-                                        alt="Fikru">
-                                </div>
-                                <div class="student-info">
-                                    <div class="student-name">Fikru Hailu</div>
-                                    <div class="student-details">
-                                        <span class="student-grade">Grade 5</span>
-                                        <span class="student-age">11 years</span>
-                                        <span class="student-location">Debre Markos</span>
-                                    </div>
-                                </div>
-                            </a>
-
-                            <a href="../html/_T_childprofilepage.html" class="student-card">
-                                <div class="profile-pic">
-                                    <img src="../gallery/profile/OIP (1).webp" alt="Genet">
-                                </div>
-                                <div class="student-info">
-                                    <div class="student-name">Genet Ashenafi</div>
-                                    <div class="student-details">
-                                        <span class="student-grade">Grade 4</span>
-                                        <span class="student-age">10 years</span>
-                                        <span class="student-location">Arba Minch</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="action-buttons">
-                            <button class="btn btn-prev">Previous</button>
-                            <button class="btn btn-next">Next</button>
-                        </div>
-                    </div>
-                </main>
-
-                <footer class="footers">
-                    <div class="footer-content">
-                        <div class="footer-logo">
-                            <h2>Hope</h2>
-                            <p class="tagline">Making your life easier with our services</p>
-                            <div class="social-icons">
-
+                        <div class="student-info">
+                            <div class="student-name">Abebe Kebede</div>
+                            <div class="student-details">
+                                <span class="student-grade">Grade 7</span>
+                                <span class="student-age">13 years</span>
+                                <span class="student-location">Addis Ababa</span>
                             </div>
                         </div>
-                        <div class="footer-links">
-                            <h3>Quick Links</h3>
-                            <ul>
-                                <li><a href="../../index.html">Home</a></li>
-                                <li><a href="../html/generated/service.html">Service</a></li>
-                                <li><a href="#werdsfsdfdfkk">Contact</a></li>
-                                <li><a href="../html/generated/help.html">Help</a></li>
-                            </ul>
+                    </a>
+
+                    <a href="../html/_T_childprofilepage.html" class="student-card">
+                        <div class="profile-pic">
+                            <img src="../gallery/profile/large-portrait-little-girl-years-old-brown-eyes-dark-blond-hair-two-tails-light-sweater-multi-colored-polka-dots-199065591.webp"
+                                alt="Meron">
                         </div>
-                        <div class="footer-services">
-                            <h3>Services</h3>
-                            <ul>
-                                <li><a href="../html/generated/service.html">Service 1</a></li>
-                                <li><a href="../html/generated/service.html">Service 2</a></li>
-                                <li><a href="../html/generated/service.html">Service 3</a></li>
-                                <li><a href="../html/generated/service.html">Service 4</a></li>
-                                <li><a href="../html/generated/service.html">Service 5</a></li>
-                            </ul>
+                        <div class="student-info">
+                            <div class="student-name">Meron Tesfaye</div>
+                            <div class="student-details">
+                                <span class="student-grade">Grade 5</span>
+                                <span class="student-age">11 years</span>
+                                <span class="student-location">Bahir Dar</span>
+                            </div>
                         </div>
-                        <div class="footer-contact" id="werdsfsdfdfkk">
-                            <h3>Contact Us</h3>
-                            <ul>
-                                <li>info@example.com</li>
-                                <li> +1 (123) 456-7890</li>
-                                <li>123 Street, City</li>
-                            </ul>
+                    </a>
+
+                    <a href="../html/_T_childprofilepage.html" class="student-card">
+                        <div class="profile-pic">
+                            <img src="../gallery/profile/OIP (1).webp" alt="Tewodros">
                         </div>
-                    </div>
-                    <div class="footer-bottom">
-                        <p>&copy; 2025 Hope. All rights reserved.</p>
-                    </div>
-                </footer>
+                        <div class="student-info">
+                            <div class="student-name">Tewodros Assefa</div>
+                            <div class="student-details">
+                                <span class="student-grade">Grade 6</span>
+                                <span class="student-age">12 years</span>
+                                <span class="student-location">Gondar</span>
+                            </div>
+                        </div>
+                    </a>
 
+                    <a href="../html/_T_childprofilepage.html" class="student-card">
+                        <div class="profile-pic">
+                            <img src="../gallery/kids-using-gadgets-tablet-pc-600nw-1841220493.webp" alt="Selam">
+                        </div>
+                        <div class="student-info">
+                            <div class="student-name">Selamawit Girma</div>
+                            <div class="student-details">
+                                <span class="student-grade">Grade 4</span>
+                                <span class="student-age">10 years</span>
+                                <span class="student-location">Hawassa</span>
+                            </div>
+                        </div>
+                    </a>
 
+                    <a href="../html/_T_childprofilepage.html" class="student-card">
+                        <div class="profile-pic">
+                            <img src="../gallery/profile/OIP (1).webp" alt="Yohannes">
+                        </div>
+                        <div class="student-info">
+                            <div class="student-name">Yohannes Mekonnen</div>
+                            <div class="student-details">
+                                <span class="student-grade">Grade 3</span>
+                                <span class="student-age">9 years</span>
+                                <span class="student-location">Mekelle</span>
+                            </div>
+                        </div>
+                    </a>
 
+                    <a href="../html/_T_childprofilepage.html" class="student-card">
+                        <div class="profile-pic">
+                            <img src="../gallery/profile/OIP.webp" alt="Alem">
+                        </div>
+                        <div class="student-info">
+                            <div class="student-name">Alemnesh Demisse</div>
+                            <div class="student-details">
+                                <span class="student-grade">Grade 2</span>
+                                <span class="student-age">8 years</span>
+                                <span class="student-location">Dire Dawa</span>
+                            </div>
+                        </div>
+                    </a>
 
+                    <a href="../html/_T_childprofilepage.html" class="student-card">
+                        <div class="profile-pic">
+                            <img src="../gallery/profile/beautiful-asian-girl-smiling_393744-2618.jpg" alt="Dawit">
+                        </div>
+                        <div class="student-info">
+                            <div class="student-name">Dawit Solomon</div>
+                            <div class="student-details">
+                                <span class="student-grade">Grade 1</span>
+                                <span class="student-age">7 years</span>
+                                <span class="student-location">Jimma</span>
+                            </div>
+                        </div>
+                    </a>
 
+                    <a href="../html/_T_childprofilepage.html" class="student-card">
+                        <div class="profile-pic">
+                            <img src="../gallery/profile/asian-girls-education-happy-beautiful-asian-girl-is-smilling-generative-ai_947762-3120.avif"
+                                alt="Eyerus">
+                        </div>
+                        <div class="student-info">
+                            <div class="student-name">Eyerus Alemayehu</div>
+                            <div class="student-details">
+                                <span class="student-grade">Grade 6</span>
+                                <span class="student-age">12 years</span>
+                                <span class="student-location">Adama</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="../html/_T_childprofilepage.html" class="student-card">
+                        <div class="profile-pic">
+                            <img src="../gallery/profile/large-portrait-little-girl-years-old-brown-eyes-dark-blond-hair-two-tails-light-sweater-multi-colored-polka-dots-199065591.webp"
+                                alt="Fikru">
+                        </div>
+                        <div class="student-info">
+                            <div class="student-name">Fikru Hailu</div>
+                            <div class="student-details">
+                                <span class="student-grade">Grade 5</span>
+                                <span class="student-age">11 years</span>
+                                <span class="student-location">Debre Markos</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="../html/_T_childprofilepage.html" class="student-card">
+                        <div class="profile-pic">
+                            <img src="../gallery/profile/OIP (1).webp" alt="Genet">
+                        </div>
+                        <div class="student-info">
+                            <div class="student-name">Genet Ashenafi</div>
+                            <div class="student-details">
+                                <span class="student-grade">Grade 4</span>
+                                <span class="student-age">10 years</span>
+                                <span class="student-location">Arba Minch</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="action-buttons">
+                    <button class="btn btn-prev">Previous</button>
+                    <button class="btn btn-next">Next</button>
+                </div>
+            </div>
         </main>
 
-    </div>
+    </section>
+
+    <footer class="footers">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>Hope</h2>
+                <p class="tagline">Making your life easier with our services</p>
+                <div class="social-icons">
+
+                </div>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../html/generated/service.html">Service</a></li>
+                    <li><a href="#werdsfsdfdfkk">Contact</a></li>
+                    <li><a href="../html/generated/help.html">Help</a></li>
+                </ul>
+            </div>
+            <div class="footer-services">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="../html/generated/service.html">Service 1</a></li>
+                    <li><a href="../html/generated/service.html">Service 2</a></li>
+                    <li><a href="../html/generated/service.html">Service 3</a></li>
+                    <li><a href="../html/generated/service.html">Service 4</a></li>
+                    <li><a href="../html/generated/service.html">Service 5</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact" id="werdsfsdfdfkk">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>info@example.com</li>
+                    <li> +1 (123) 456-7890</li>
+                    <li>123 Street, City</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Hope. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+
+
+    <script src="../js/bootstrap.js"></script>
 
 
 </body>

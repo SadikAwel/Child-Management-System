@@ -1,15 +1,64 @@
 .mainHeaderPage {
-  height: 90vh;
-  background: linear-gradient(rgba(5, 5, 5, 0.415), rgba(22, 20, 20, 0.656), rgba(0, 0, 0, 0.442)),
-    url("../../gallery/image-109.jpeg");
-  display: flex;
+  width: 100%;
+  height: 123px !important;
+  background: linear-gradient(rgba(0, 0, 0, 0.58), rgba(22, 20, 20, 0.545)),
+    url("../../gallery/mentor-770x513.jpg");
   flex-direction: column;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
   box-shadow: 1px 1px 34px rgba(53, 42, 42, 0.573);
-  border-radius: 10px;
-  gap: 150px;
+  gap: 10px;
+}
+
+.mainHeaderPage .Logo {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  height: fit-content;
+  align-items: center;
+}
+.mainHeaderPage .Logo span {
+  font-size: 74px;
+  text-align: center;
+  color: yellow;
+}
+.mainHeaderPage .Logo span {
+  flex: 1;
+}
+
+.mainHeaderPage .Logo ul {
+  flex: 2;
+  display: flex;
+  gap: 1px;
+  font-size: large;
+  list-style: none;
+  text-decoration: none;
+  justify-content: end;
+  padding-right: 50px;
+}
+
+.mainHeaderPage .Logo ul li:hover {
+  box-shadow: 1px 4px 15px rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-3px);
+}
+.mainHeaderPage .Logo ul li a {
+  list-style: none;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.77);
+}
+
+.headerDescription p {
+  text-align: center;
+  max-width: 600px;
+  font-family: "Poppins", sans-serif;
+  /* Consistent font */
+  font-size: 1.5rem;
+  color: #ffffff;
+  line-height: 1.6;
+  margin: 0 auto;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 
 #watermarkforhope {
@@ -18,7 +67,7 @@
   font-size: 100px;
   font-weight: 600;
   position: absolute;
-  top: 25%;
+  top: 230%;
   left: 30%;
   z-index: 1;
 }
@@ -28,4 +77,19 @@
   color: rgba(255, 0, 0, 0.245);
   z-index: 3;
   font-size: 50px;
+  position: fixed;
+}
+.logo {
+  background-color: red !important;
+}
+@media (max-width: 992px) {
+  .headerDescription p {
+    display: none !important;
+  }
+  .Logo {
+    display: none;
+  }
+  .mainHeaderPage {
+    height: fit-content;
+  }
 }

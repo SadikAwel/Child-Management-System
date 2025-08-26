@@ -15,15 +15,15 @@
   height: fit-content !important;
 }
 .imgfornavbar {
-  position: fixed;
-  left: 41px;
-  top: 10px;
+  position: absolute;
+  left: 21px;
+  top: 120px;
   width: 40px;
   height: auto;
-  background-color: #fedd00;
+  background-color: #d2d5db;
   border-radius: 10px;
   transition: 0.2s;
-  z-index: 5;
+  z-index: 1;
 }
 .zaa {
   z-index: 2 !important;
@@ -182,7 +182,7 @@ nav {
   display: none;
   position: fixed;
   right: -34px;
-  top: 00px;
+  top: 40px;
   background-color: rgba(27, 43, 71, 0.968);
   min-width: 200px;
   border-radius: 8px;
@@ -395,6 +395,9 @@ nav {
 }
 
 @media (min-width: 992px) {
+  .navbar {
+    height: fit-content !important;
+  }
   .team-section {
     flex-direction: row;
     justify-content: space-between;
@@ -412,68 +415,16 @@ nav {
     text-align: left;
   }
 }
-
-@media (max-width: 992px) {
-  .mainHeaderPage {
-    background: linear-gradient(
-      rgb(1, 25, 104),
-      rgba(191, 202, 231, 0.801),
-      rgba(255, 255, 255, 0.801)
-    ) !important;
-    height: fit-content !important;
-    margin: 0px;
-
-    padding: 0px;
-  }
-  .team-description {
-    color: rgb(0, 0, 0);
-  }
-
-  .mainHeaderPage .Logo ul {
-    margin: 10px;
-  }
-  .mainHeaderPage .Logo ul li {
-    background-color: #151754d1;
-    width: 100%;
-    border-radius: 10px;
-    justify-content: space-between;
-    background-color: none !important;
-  }
-  .mainHeaderPage .Logo ul li a {
-    width: 100% !important;
-    height: fit-content !important;
-  }
-
-  .mainHeaderPage .Logo span {
-    font-size: 274%;
-    text-align: center;
-    color: yellow;
-    display: none;
-  }
-  .mainHeaderPage {
-    height: fit-content;
-  }
+#thisforteachernavzz {
+  width: 100%;
+  height: fit-content;
+  margin-bottom: 3px !important;
+}
+.mainHeaderPage {
+  height: fit-content;
+  margin-bottom: 110px !important;
 }
 
-@media (max-width: 768px) {
-  .team-description {
-    font-size: 1rem;
-  }
-  .team-table,
-  .team-table th,
-  .team-table td {
-    font-size: 0.9rem;
-  }
-  .loginfieldset {
-    width: 350px;
-    background-color: rgba(6, 35, 45, 0.466) !important;
-    border-radius: 3px;
-    box-shadow: -10px -1px rgb(41, 101, 134), -1px -1px 5px white, 0 10px 25px rgba(0, 0, 0, 0.2);
-    position: relative;
-    height: fit-content;
-  }
-}
-
-.font-black {
-  color: rgb(1, 25, 104) !important;
+.watermarkforhopee {
+  position: fixed;
 }

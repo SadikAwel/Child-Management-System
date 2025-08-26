@@ -7,6 +7,9 @@
   color: #2c3e50;
 }
 
+.todayActivityForChild {
+  position: relative;
+}
 #background-text {
   position: absolute;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -108,35 +111,37 @@
 }
 
 .class-container {
-  background-color: #2c3e50d8;
+  background-color: #0a2279d8;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   height: 25%;
+  width: 100vw;
   margin-top: 3%;
 }
 
 #middleTitle {
   top: 80px;
   text-align: center;
-  color: #331a1add;
-  font-size: 1.9rem;
+  color: #ffffff;
+  font-size: 2.5rem;
   display: inline-block;
   margin: auto;
 }
 .Grade-container {
   display: flex;
-  background: linear-gradient(rgba(255, 255, 255, 0.84), rgba(70, 72, 13, 0.268), rgba(26, 49, 24, 0.493));
-  height: 44vh;
+  background: linear-gradient(rgba(46, 84, 124, 0.87), rgba(255, 255, 255, 0.949), rgba(26, 49, 24, 0.493));
+  height: fit-content;
   width: 100%;
+
   box-shadow: -1px 1px 34px rgba(0, 0, 0, 0.573);
   padding: 3%;
   overflow-x: scroll;
   gap: 1.2rem;
 }
 
-.Grade-container > button {
+.Grade-container > a {
   flex: 0 0 auto;
   flex-wrap: wrap;
   background: linear-gradient(rgb(190, 203, 183), rgba(112, 113, 85, 0.505), rgba(33, 63, 31, 0.478));
@@ -156,6 +161,7 @@
   background-size: cover;
   background-position: center;
   width: 20%;
+  min-width: 120px;
 }
 #prom-2 {
   background: linear-gradient(rgba(195, 189, 189, 0.749), rgba(5, 4, 4, 0.639)),
@@ -163,6 +169,7 @@
   background-size: cover;
   background-position: center;
   width: 20%;
+  min-width: 120px;
 }
 #prom-3 {
   background: linear-gradient(rgba(195, 189, 189, 0.749), rgba(5, 4, 4, 0.639)),
@@ -170,6 +177,7 @@
   background-size: cover;
   background-position: center;
   width: 20%;
+  min-width: 120px;
 }
 #prom-4 {
   background: linear-gradient(rgba(195, 189, 189, 0.749), rgba(5, 4, 4, 0.639)),
@@ -177,6 +185,7 @@
   background-size: cover;
   background-position: center;
   width: 20%;
+  min-width: 120px;
 }
 #prom-5 {
   background: linear-gradient(rgba(195, 189, 189, 0.749), rgba(5, 4, 4, 0.639)),
@@ -184,6 +193,7 @@
   background-size: cover;
   background-position: center;
   width: 20%;
+  min-width: 120px;
 }
 #prom-6 {
   background: linear-gradient(rgba(195, 189, 189, 0.749), rgba(5, 4, 4, 0.639)),
@@ -191,6 +201,7 @@
   background-size: cover;
   background-position: center;
   width: 20%;
+  min-width: 120px;
 }
 #prom-7 {
   background: linear-gradient(rgba(195, 189, 189, 0.749), rgba(5, 4, 4, 0.639)),
@@ -198,20 +209,36 @@
   background-size: cover;
   background-position: center;
   width: 20%;
+  min-width: 120px;
 }
-.Grade-container > button:hover {
+.Grade-container > a:hover {
   /* margin-bottom: 50px; */
   transform: translateY(-3px);
-  background: linear-gradient(rgba(122, 89, 53, 0.368), rgba(88, 78, 63, 0.374), rgba(12, 38, 10, 0.341));
+  background: linear-gradient(
+    rgba(122, 89, 53, 0.123),
+    rgba(88, 78, 63, 0.135),
+    rgba(12, 38, 10, 0.121)
+  ) !important;
   box-shadow: 1px 1px 34px rgba(53, 34, 34, 0.851);
 }
+
+.Grade-container > a {
+  text-decoration: none;
+  color: black;
+}
+
+.Grade-container > a:active {
+  /* margin-bottom: 50px; */
+
+  box-shadow: 1px 1px 24px rgba(234, 233, 233, 0.851);
+}
 #Remainderplace {
-  background-color: #2c3e50a7;
   height: 20%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 4%;
+  padding: 4%;
   box-shadow: 12px 12px #2c3e50;
 }
 

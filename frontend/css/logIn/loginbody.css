@@ -1,18 +1,21 @@
 .direction-fixer {
   display: flex;
-  justify-content: end;
-  margin-top: -80px;
+  height: fit-content;
+
+  align-items: center;
+
+  justify-content: flex-end;
+  margin-left: auto;
+  margin-right: 10%;
 }
 /* Login Card */
 .loginfieldset {
   width: 350px;
   background-color: rgba(234, 197, 47, 0.914);
-  border-radius: 20px;
+  border-radius: 3px;
   box-shadow: -10px -1px rgb(41, 101, 134), -1px -1px 5px white, 0 10px 25px rgba(0, 0, 0, 0.2);
   position: relative;
-  right: 180px;
-  height: 65vh;
-  bottom: 12px;
+  height: fit-content;
 }
 
 /* Decorative Bars */
@@ -24,7 +27,8 @@
   justify-content: center;
 }
 .logindecore div {
-  width: 3vw;
+  width: 43px;
+  position: relative;
   height: 10vh;
   background-color: rgb(135, 138, 140);
   box-shadow: 12px 12px 32px;
@@ -52,7 +56,7 @@
 .logincontent label {
   display: block;
   font-size: 1.1rem;
-  margin-bottom: 8px;
+
   color: #333;
 }
 
@@ -77,23 +81,17 @@
   background-color: white;
 }
 
-/* Login Button */
-#submit-login {
-  width: 170%;
-
-  padding-left: 123px;
-  padding-right: 113px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  font-size: 1.1rem;
-  color: white;
-  background-color: rgb(41, 101, 134);
-  border: none;
+.logincontent #submit-login {
+  width: 100%;
+  padding: 12px 42%;
+  font-size: 1rem;
+  background-color: rgba(14, 31, 77, 0.903);
+  border: 1px solid #ccc;
   border-radius: 10px;
-  cursor: pointer;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
-  box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.2);
-  margin-top: 10px;
+  text-decoration: none;
+  color: gold;
 }
 
 #submit-login:hover {
@@ -104,12 +102,6 @@
 #submit-login:active {
   background-color: rgba(41, 101, 134, 0.8);
   transform: translateY(0);
-}
-
-#submit-login a {
-  text-decoration: none;
-  font-style: none;
-  color: white;
 }
 
 /* Sign Up Link */
@@ -131,18 +123,10 @@
 }
 
 /* Responsive Adjustments */
-@media (max-width: 768px) {
-  .mainHeaderPage {
-    height: 100vh;
-    width: 100%;
-    border-radius: 0;
+@media (max-width: 500px) {
+  .direction-fixer {
     justify-content: center;
-    padding-right: 0;
-  }
 
-  .loginfieldset {
-    width: 90%;
-    max-width: 350px;
-    margin: 0 auto;
+    width: 100vw;
   }
 }

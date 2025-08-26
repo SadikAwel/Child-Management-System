@@ -8,49 +8,81 @@
     <link rel="stylesheet" href="../css/parent/topmessage.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/parent/childActivity.css">
-    <title>Child managment system</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <title>Hope-Parent Page</title>
 </head>
 
 <body>
+    <header class="header-email-box">
 
-    <header id="header-email-box">
         <span>email: childmanagmentsystem@gmail.com
 
         </span>
 
     </header>
+    <button class="toggle navbar-toggler start-0 z-2" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+        <img src="../gallery/10055595.png" alt="navbar" class="imgfornavbar " title="Navigation"></button>
 
     <div class="spacerforheader"></div>
     <section class="mainHeaderPage">
 
 
-        <div class="Logo">
+        <div class="Logo navbar navbar-expand-md z-3">
+            <div class="container">
+                <span>
+                    <p id="hopedisapper" class=" d-none">HOPE</p>
+                </span>
+                <button class="toggle navbar-toggler ms-auto" data-bs-toggle="collapse" data-bs-target="#parentpagenav"
+                    title="parentpagenav">
+                    <div class="navbar-toggler-icon"></div>
+                </button>
+                <div class="collapse navbar-collapse" id="parentpagenav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="../../index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../html/generated/service.html">Service</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#sdfsdrewrsdf">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../html/generated/help.html">Help</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../index.html" class="loginanim">LogOut</a>
+                        </li>
 
-            <span>
-                <p>HOPE</p>
-            </span>
 
-            <ul>
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="../html/generated/service.html">Service</a></li>
-                <li><a href="#sdfsdrewrsdf">Contact</a></li>
-                <li><a href="../html/generated/help.html">Help</a></li>
-                <li><a href="../../index.html" class="loginanim">LogOut</a></li>
-
-
-            </ul>
+                    </ul>
+                </div>
+            </div>
         </div>
 
+        <!-- 
+        <aside  class="d-none d-lg-block">
+            
 
-        <aside id="sideFrame">
-            <ul>
-                <li><a href="#dsfsdfsdfsdfggf">See child activity</a></li>
-                <li><a href="#sdfertergdfgdf">connect</a></li>
-                <li><a href="#sdfsdrertedfgdfg">contact</a></li>
-                <li> <button onclick="window.history.back()">Back</button></li>
-            </ul>
+        </aside> -->
 
-        </aside>
+
+
+
+        <div class="offcanvas offcanvas-start bg-favorite-color" data-bs-scroll="true" data-bs-backdrop="false"
+            tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Navigation</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body" id="sideFrame">
+                <ul>
+                    <li><a href=" #child-activity">See child activity
+                        </a>
+                        <hr>
+                    </li>
+                    <li><a href="#erdfsdfsdfsdf">connect</a>
+                        <hr>
+                    </li>
+                    <li><a href="#contact-us">contact</a>
+                        <hr>
+                    </li>
+                    <li> <button onclick="window.history.back()">Back</button></li>
+                </ul>
+            </div>
+        </div>
         <div id="background-text">
 
         </div>
@@ -101,192 +133,213 @@
         </div>
     </section>
 
-
-    <section class="childActivity" id="dsfsdfsdfsdfggf">
-        <h2>Child Activity</h2>
-        <div class="child-columns">
-            <!-- Column 1: Child Name Box -->
-            <div class="child-button">
-                <div class="childNameBox">
-
-                    <ul>
-                        <li>
-                            <h3 id="selectAchild">Select A child</h3>
-                        </li>
-                        <li><input type="button" value="Child 1"></li>
-                        <li><input type="button" value="Child 2"></li>
-                        <li><input type="button" value="Child 3"></li>
-                        <li><input type="button" value="Child 4"></li>
-                        <li id="sdfertergdfgdf"><input type="button" value="Add"></li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Column 2: Site Watching History -->
-            <div class="sitewatching">
-                <div>
-                    <h3>Site Watching History</h3>
-                </div>
-                <div id="WatchingHistory">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Watching History</th>
-                                <th>Time Spent</th>
-                                <th>Control</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>www.tiktok.com</td>
-                                <td>2h 15m</td>
-                                <td><input type="checkbox" title="restrict"></td>
-                            </tr>
-                            <tr>
-                                <td>www.youtube.com</td>
-                                <td>1h 30m</td>
-                                <td><input type="checkbox" title="restrict"></td>
-                            </tr>
-                            <tr>
-                                <td>www.facebook.com</td>
-                                <td>45m</td>
-                                <td><input type="checkbox" title="restrict"></td>
-                            </tr>
-                            <tr>
-                                <td>www.facebook.com</td>
-                                <td>45m</td>
-                                <td><input type="checkbox" title="restrict"></td>
-                            </tr>
-                            <tr>
-                                <td>www.facebook.com</td>
-                                <td>45m</td>
-                                <td><input type="checkbox" title="restrict"></td>
-                            </tr>
-                            <tr>
-                                <td>www.facebook.com</td>
-                                <td>45m</td>
-                                <td><input type="checkbox" title="restrict"></td>
-                            </tr>
-                            <tr>
-                                <td>www.facebook.com</td>
-                                <td>45m</td>
-                                <td><input type="checkbox" title="restrict"></td>
-                            </tr>
-                            <tr>
-                                <td>www.facebook.com</td>
-                                <td>45m</td>
-                                <td><input type="checkbox" title="restrict"></td>
-                            </tr>
-                            <tr>
-                                <td>www.facebook.com</td>
-                                <td>45m</td>
-                                <td><input type="checkbox" title="restrict"></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <!-- Column 3: Academic Progress & Status Chart -->
-            <div>
-                <div>
-                    <h3>Academic Progress</h3>
-                </div>
-                <div>
-                    <table class="academic-table">
-                        <thead>
-                            <tr>
-                                <th colspan="2">Course Name</th>
-                                <th>Class Activity</th>
-                                <th>Homework</th>
-                                <th colspan="2">Exam</th>
-                                <th>Progress Indicator</th>
-                            </tr>
-                            <tr>
-                                <td colspan="2">Amharic</td>
-                                <td>34%</td>
-                                <td>76%</td>
-                                <td>34%</td>
-                                <td>87%</td>
-                                <td><input type="range" title="range indicator"></td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">English</td>
-                                <td>34%</td>
-                                <td>76%</td>
-                                <td>34%</td>
-                                <td>87%</td>
-                                <td><input type="range" title="range indicator"></td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">Maths</td>
-                                <td>34%</td>
-                                <td>76%</td>
-                                <td>34%</td>
-                                <td>87%</td>
-                                <td><input type="range" title="range indicator"></td>
-                            </tr>
-                            <tr>
-                                <td colspan="2">Art</td>
-                                <td>34%</td>
-                                <td>76%</td>
-                                <td>34%</td>
-                                <td>87%</td>
-                                <td><input type="range" title="range indicator"></td>
-                            </tr>
-                        </thead>
-                    </table>
-                </div>
-                <div>
-                    <section>
-                        <h2>Status Chart</h2>
-
-                        <div class="statuschart">
-                            sdf
+    <div class="col-12 col-lg-9 childActivity">
+        <!-- Child Activity Section -->
+        <section id="child-activity" class="mt-4">
+            <h2 class="text-center mb-4 fw-bold font-black">Child Activity</h2>
+            <div class="secondActivity row g-12 m-auto-lg">
+                <!-- Child Buttons Column -->
+                <div class="col-12 col-md-4">
+                    <div class=" card h-100">
+                        <div class="card-header">
+                            <h5 class="mb-0">Select Child</h5>
                         </div>
-                    </section>
+                        <div class="card-body">
+                            <ul class="list-group">
+                                <li class="list-group-item border-0 p-2"><button
+                                        class="btn btn-primary w-100 rounded-pill">Child
+                                        1</button></li>
+                                <li class="list-group-item border-0 p-2"><button
+                                        class="btn btn-outline-secondary w-100 rounded-pill">Child
+                                        2</button></li>
+                                <li class="list-group-item border-0 p-2"><button
+                                        class="btn btn-outline-secondary w-100 rounded-pill">Child
+                                        3</button></li>
+                                <li class="list-group-item border-0 p-2"><button
+                                        class="btn btn-outline-secondary w-100 rounded-pill">Child
+                                        4</button></li>
+                                <li class="list-group-item border-0 p-2"><button
+                                        class="btn btn-success w-100 rounded-pill" id="erdfsdfsdfsdf">Add Child</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Site Watching History Column -->
+                <div class="col-12 col-md-8">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            <h5 class="mb-0">Site Watching History</h5>
+                        </div>
+                        <div class="card-body overflow-auto">
+                            <div class="table-responsive">
+                                <table class="table table-hover table-sm">
+                                    <thead>
+                                        <tr>
+                                            <th>Watching History</th>
+                                            <th>Time Spent</th>
+                                            <th>Control</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>www.tiktok.com</td>
+                                            <td>2h 15m</td>
+                                            <td><input type="checkbox" title="restrict" class="form-check-input">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>www.youtube.com</td>
+                                            <td>1h 30m</td>
+                                            <td><input type="checkbox" title="restrict" class="form-check-input">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>www.facebook.com</td>
+                                            <td>45m</td>
+                                            <td><input type="checkbox" title="restrict" class="form-check-input">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>www.facebook.com</td>
+                                            <td>45m</td>
+                                            <td><input type="checkbox" title="restrict" class="form-check-input">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>www.facebook.com</td>
+                                            <td>45m</td>
+                                            <td><input type="checkbox" title="restrict" class="form-check-input">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Column 3: Academic Progress & Status Chart -->
+
+
+                <!-- Academic Progress & Status Chart -->
+                <div class="col-12">
+                    <div class="card mt-4">
+                        <div class="card-header">
+                            <h5 class="mb-0">Academic Progress & Status</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Course Name</th>
+                                            <th>Class Activity</th>
+                                            <th>Homework</th>
+                                            <th colspan="2">Exam</th>
+                                            <th>Progress Indicator</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Amharic</td>
+                                            <td>34%</td>
+                                            <td>76%</td>
+                                            <td>34%</td>
+                                            <td>87%</td>
+                                            <td><input type="range" class="form-range" title="range indicator">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>English</td>
+                                            <td>34%</td>
+                                            <td>76%</td>
+                                            <td>34%</td>
+                                            <td>87%</td>
+                                            <td><input type="range" class="form-range" title="range indicator">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Maths</td>
+                                            <td>34%</td>
+                                            <td>76%</td>
+                                            <td>34%</td>
+                                            <td>87%</td>
+                                            <td><input type="range" class="form-range" title="range indicator">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Art</td>
+                                            <td>34%</td>
+                                            <td>76%</td>
+                                            <td>34%</td>
+                                            <td>87%</td>
+                                            <td><input type="range" class="form-range" title="range indicator">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact-us" class="mt-5">
+        <h2 class="text-center mb-4 fw-bold">Contact</h2>
+        <div class="row g-4 justify-content-center">
+            <div class="col-12 col-md-4">
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action active">Dr. Clark (Doctor)</a>
+                    <a href="#" class="list-group-item list-group-item-action">Ms. Davis (Teacher)</a>
+                    <a href="#" class="list-group-item list-group-item-action">Children's Clinic</a>
+                </div>
+            </div>
+            <div class="col-12 col-md-8">
+                <div class="card h-100">
+                    <div class="card-header">
+                        <h5 class="mb-0">Dr. Clark</h5>
+                    </div>
+                    <div class="card-body d-flex flex-column" style="height: 400px;">
+                        <div class="flex-grow-1 overflow-auto p-3">
+                            <div class="d-flex justify-content-start mb-3">
+                                <div class="message-bubble received-message">
+                                    Hello, thanks for coming in today. I wanted to follow up on the recent
+                                    test results for your child.
+                                    <div class="message-timestamp">10:05 AM</div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-end mb-3">
+                                <div class="message-bubble sent-message">
+                                    Hi Dr. Clark. Thank you for the update. Is everything okay?
+                                    <div class="message-timestamp">10:06 AM</div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-start mb-3">
+                                <div class="message-bubble received-message">
+                                    Yes, all the results look normal and there is no cause for concern.
+                                    We'll simply schedule a follow-up in six months to monitor their
+                                    progress.
+                                    <div class="message-timestamp">10:07 AM</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-group mt-3">
+                            <input type="text" class="form-control" placeholder="Write a message..."
+                                aria-label="Write a message">
+                            <button class="btn btn-primary" type="button">&raquo;</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <div class="contact-container" id="sdfsdrertedfgdfg">
-        <div class="container-name">
-            <div>
-                <h3>Doctor</h3>
-            </div>
-            <div>
-                <h3>Healthcare</h3>
-            </div>
-        </div>
-        <div class="chat-container">
-            <div class="chat-header">
-
-                <h2>Dr. Clark</h2>
-            </div>
-            <div class="message-area">
-                <div class="message-bubble received-message">
-                    Hello, thanks for coming in today. I wanted to follow up on the recent test results for your child.
-                    <div class="message-timestamp">10:05 AM</div>
-                </div>
-                <div class="message-bubble sent-message">
-                    Hi Dr. Clark. Thank you for the update. Is everything okay?
-                    <div class="message-timestamp">10:06 AM</div>
-                </div>
-                <div class="message-bubble received-message">
-                    Yes, all the results look normal and there is no cause for concern. We'll simply schedule a
-                    follow-up in
-                    six months to monitor their progress.
-                    <div class="message-timestamp">10:07 AM</div>
-                </div>
-            </div>
-            <div class="chat-input">
-                <input type="text" placeholder="Write a message...">
-                <button>&raquo;</button>
-            </div>
-        </div>
-
-    </div>
 
     <footer class="footers">
         <div class="footer-content">
@@ -333,7 +386,7 @@
 
 
 
-
+    <script src="../js/bootstrap.js"></script>
 
 
 </body>

@@ -4,228 +4,252 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/teacher/teacherHeader.css">
     <link rel="stylesheet" href="../css/teacher/teacherBody.css">
     <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
 
-    <title>Child managment system</title>
+    <title>Hope-teacher page</title>
 </head>
 
 <body>
 
-    <div class="body">
-        <header id="header-email-box">
-            <span>email: childmanagmentsystem@gmail.com
+    <header class="header-email-box">
+        <span>email: childmanagmentsystem@gmail.com
 
-            </span>
+        </span>
 
-        </header>
-        <div class="side">
-            <aside id="sideFrame">
-                <ul>
-                    <li><a href="../html/_T_searchpage.html">See child Progress</a></li>
-                    <li><a href="#middleTitle">Add Home Work</a></li>
-                    <li><a href="#Remainderplace">Remainder</a></li>
-                    <li> <button onclick="window.history.back()">Log Out</button></li>
-                </ul>
+    </header>
+    <button class="toggle navbar-toggler start-0" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+        <img src="../gallery/10055595.png" alt="navbar" class="imgfornavbar" title="Navigation"></button>
 
-            </aside>
+
+
+
+    <div class="offcanvas offcanvas-start bg-favorite-color" data-bs-scroll="true" data-bs-backdrop="false"
+        tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Navigation</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <main class="bodymain">
+        <div class="offcanvas-body" id="sideFrame">
+            <ul>
+                <li><a href="../html/_T_searchpage.html">See child Progress</a>
+                    <hr>
+                </li>
+                <li><a href="#middleTitle">Add Home Work</a>
+                    <hr>
+                </li>
+                <li><a href="#sdfertergdfgdf">connect</a>
+                    <hr>
+                </li>
+                <li><a href="#Remainderplace">Remainder</a>
+                    <hr>
+                </li>
+                <li> <button onclick="window.history.back()">Back</button></li>
+            </ul>
+        </div>
+    </div>
 
 
-            <div class="spacerforheader"></div>
-            <section class="mainHeaderPage">
 
 
-                <div class="Logo">
 
-                    <span>
-                        <p>HOPE</p>
-                    </span>
 
-                    <ul>
-                        <li><a href="../../index.html">Home</a></li>
-                        <li><a href="../html/generated/service.html">Service</a></li>
-                        <li><a href="#ewrfsdsdfsdfsd">Contact</a></li>
-                        <li><a href="../html/generated/help.html">Help</a></li>
-                        <li><a href="../../index.html" class="loginanim">Log Out</a></li>
+
+    <div class="spacerforheader"></div>
+    <section class="mainHeaderPage">
+
+
+        <div class="Logo navbar navbar-expand-md">
+            <div class="container">
+                <span>
+                    <p>HOPE</p>
+                </span>
+                <button class="toggle navbar-toggler ms-auto" data-bs-toggle="collapse"
+                    data-bs-target=" #thisforteachernav">
+                    <div class="navbar-toggler-icon" title="nav"></div>
+                </button>
+                <div class="collapse navbar-collapse" id="thisforteachernav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a href="../../index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="../html/generated/service.html" class="nav-link">Service</a>
+                        </li>
+                        <li class="nav-item"><a href="#ewrfsdsdfsdfsd" class="nav-link">Contact</a></li>
+                        <li class="nav-item"><a href="../html/generated/help.html" class="nav-link">Help</a></li>
+                        <li class="nav-item"><a href="../../index.html" class="loginanim" class="nav-link">Log
+                                Out</a></li>
 
 
                     </ul>
                 </div>
-
-                <form action="../html/_T_searchpage.html" method="get" class="search-form">
-                    <input type="text" placeholder="Search..." name="q" class="search-input">
-                    <button type="submit" class="search-button" title="submit">
-                        <!-- SVG for the magnifying glass icon -->
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M19 19L13 13M15 8C15 11.866 11.866 15 8 15C4.13401 15 1 11.866 1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8Z"
-                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </button>
-                </form>
-
-                <div id="background-text">
-
-                </div>
-
-                <div id="messageBoxContainer">
-                    <div class="message-header">
-                        <h2>Message Box</h2>
-                        <button class="refresh-button">&#x21bb;</button>
-                    </div>
-                    <div class="message-list">
-                        <div>
-                            <div class="miniprofile">
-                                <img src="https://placehold.co/50x50/3498db/ffffff?text=T1"
-                                    alt="Teacher's Profile Picture">
-                            </div>
-                            <div class="miniMessage">
-                                <h4>Ms. Davis (Teacher)</h4>
-                                <p>Just a quick note that your child is doing excellent in their class projects!</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="miniprofile">
-                                <img src="https://placehold.co/50x50/e74c3c/ffffff?text=D1"
-                                    alt="Dr. Wilson's Profile Picture">
-                            </div>
-                            <div class="miniMessage">
-                                <h4>Dr. Wilson (Healthcare)</h4>
-                                <p>Reminder about your child's annual check-up next Tuesday at 2 PM.</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="miniprofile">
-                                <img src="https://placehold.co/50x50/2ecc71/ffffff?text=T2"
-                                    alt="Mr. Chen's Profile Picture">
-                            </div>
-                            <div class="miniMessage">
-                                <h4>Mr. Chen (Teacher)</h4>
-                                <p>Your child has made great progress on their reading level this week.</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="miniprofile">
-                                <img src="https://placehold.co/50x50/f39c12/ffffff?text=H1"
-                                    alt="Clinic's Profile Picture">
-                            </div>
-                            <div class="miniMessage">
-                                <h4>Children's Clinic</h4>
-                                <p>A new immunization record has been added to your child's file.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="class-container">
-                <h1 id="middleTitle">Class List</h1>
-                <section class="Grade-container">
-                    <button id="prom-1">
-                        <h2>Grade 1</h2>
-                    </button>
-                    <button id="prom-2">
-                        <h2>Grade 2</h2>
-                    </button>
-                    <button id="prom-3">
-                        <h2>Grade 3</h2>
-                    </button>
-                    <button id="prom-4">
-                        <h2>Grade 4</h2>
-                    </button>
-                    <button id="prom-5">
-                        <h2>Grade 5</h2>
-                    </button>
-                    <button id="prom-6">
-                        <h2>Grade 6</h2>
-                    </button>
-                    <button id="prom-7">
-                        <h2>Grade 7</h2>
-                    </button>
-                </section>
-            </section>
-
-
-            <div id="Remainderplace">
-                <section class="section">
-
-                    <div>Reminders</div>
-                    <div>
-                        <ol id="reminder-list">
-                            <li>
-                                <button class="delete-btn" title="Delete">✕</button>
-                                <span class="reminder-text">Complete project proposal</span>
-                            </li>
-                            <li>
-                                <button class="delete-btn" title="Delete">✕</button>
-                                <span class="reminder-text">Call mom for her birthday</span>
-                            </li>
-                            <li>
-                                <button class="delete-btn" title="Delete">✕</button>
-                                <span class="reminder-text">Buy groceries for the week</span>
-                            </li>
-                            <li>
-                                <input type="text" title="newnote" placeholder="Add new reminder..." id="new-reminder">
-                                <button class="add-btn" id="add-btn">Add</button>
-                            </li>
-                        </ol>
-                    </div>
-                </section>
             </div>
+        </div>
 
-            <footer class="footers">
-                <div class="footer-content">
-                    <div class="footer-logo">
-                        <h2>Hope</h2>
-                        <p class="tagline">Making your life easier with our services</p>
-                        <div class="social-icons">
+        <form action="../html/_T_searchpage.html" method="get" class="search-form">
+            <input type="text" placeholder="Search..." name="q" class="search-input">
+            <button type="submit" class="search-button" title="submit">
+                <!-- SVG for the magnifying glass icon -->
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M19 19L13 13M15 8C15 11.866 11.866 15 8 15C4.13401 15 1 11.866 1 8C1 4.13401 4.13401 1 8 1C11.866 1 15 4.13401 15 8Z"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+        </form>
 
-                        </div>
+        <div id="background-text">
+
+        </div>
+
+        <div id="messageBoxContainer">
+            <div class="message-header">
+                <h2>Message Box</h2>
+                <button class="refresh-button">&#x21bb;</button>
+            </div>
+            <div class="message-list">
+                <div>
+                    <div class="miniprofile">
+                        <img src="https://placehold.co/50x50/3498db/ffffff?text=T1" alt="Teacher's Profile Picture">
                     </div>
-                    <div class="footer-links">
-                        <h3>Quick Links</h3>
-                        <ul>
-                            <li><a href="../../index.html">Home</a></li>
-                            <li><a href="../html/generated/service.html">Service</a></li>
-                            <li><a href="#ewrfsdsdfsdfsd">Contact</a></li>
-                            <li><a href="../html/generated/help.html">Help</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-services">
-                        <h3>Services</h3>
-                        <ul>
-                            <li><a href="../html/generated/service.html">Service 1</a></li>
-                            <li><a href="../html/generated/service.html">Service 2</a></li>
-                            <li><a href="../html/generated/service.html">Service 3</a></li>
-                            <li><a href="../html/generated/service.html">Service 4</a></li>
-                            <li><a href="../html/generated/service.html">Service 5</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-contact" id="ewrfsdsdfsdfsd">
-                        <h3>Contact Us</h3>
-                        <ul>
-                            <li>info@example.com</li>
-                            <li> +1 (123) 456-7890</li>
-                            <li>123 Street, City</li>
-                        </ul>
+                    <div class="miniMessage">
+                        <h4>Ms. Davis (Teacher)</h4>
+                        <p>Just a quick note that your child is doing excellent in their class projects!</p>
                     </div>
                 </div>
-                <div class="footer-bottom">
-                    <p>&copy; 2025 Hope. All rights reserved.</p>
+                <div>
+                    <div class="miniprofile">
+                        <img src="https://placehold.co/50x50/e74c3c/ffffff?text=D1" alt="Dr. Wilson's Profile Picture">
+                    </div>
+                    <div class="miniMessage">
+                        <h4>Dr. Wilson (Healthcare)</h4>
+                        <p>Reminder about your child's annual check-up next Tuesday at 2 PM.</p>
+                    </div>
                 </div>
-            </footer>
+                <div>
+                    <div class="miniprofile">
+                        <img src="https://placehold.co/50x50/2ecc71/ffffff?text=T2" alt="Mr. Chen's Profile Picture">
+                    </div>
+                    <div class="miniMessage">
+                        <h4>Mr. Chen (Teacher)</h4>
+                        <p>Your child has made great progress on their reading level this week.</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="miniprofile">
+                        <img src="https://placehold.co/50x50/f39c12/ffffff?text=H1" alt="Clinic's Profile Picture">
+                    </div>
+                    <div class="miniMessage">
+                        <h4>Children's Clinic</h4>
+                        <p>A new immunization record has been added to your child's file.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class=" class-container">
+        <h1 id="middleTitle">Class List</h1>
+        <section class="Grade-container">
+            <a href="../html/givehomework.html" id="prom-1">
+                <h2>Grade 1</h2>
+            </a>
+            <a href="../html/givehomework.html" id="prom-2">
+                <h2>Grade 2</h2>
+            </a>
+            <a href="../html/givehomework.html" id="prom-3">
+                <h2>Grade 3</h2>
+            </a>
+            <a href="../html/givehomework.html" id="prom-4">
+                <h2>Grade 4</h2>
+            </a>
+            <a href="../html/givehomework.html" id="prom-5">
+                <h2>Grade 5</h2>
+            </a>
+            <a href="../html/givehomework.html" id="prom-6">
+                <h2>Grade 6</h2>
+            </a>
+            <a href="../html/givehomework.html" id="prom-7">
+                <h2>Grade 7</h2>
+            </a>
+        </section>
+    </section>
 
 
+    <div id="Remainderplace">
+        <section class="section">
 
-
-
-        </main>
-
+            <div>Reminders</div>
+            <div>
+                <ol id="reminder-list">
+                    <li>
+                        <button class="delete-btn" title="Delete">✕</button>
+                        <span class="reminder-text">Complete project proposal</span>
+                    </li>
+                    <li>
+                        <button class="delete-btn" title="Delete">✕</button>
+                        <span class="reminder-text">Call mom for her birthday</span>
+                    </li>
+                    <li>
+                        <button class="delete-btn" title="Delete">✕</button>
+                        <span class="reminder-text">Buy groceries for the week</span>
+                    </li>
+                    <li>
+                        <input type="text" title="newnote" placeholder="Add new reminder..." id="new-reminder">
+                        <button class="add-btn" id="add-btn">Add</button>
+                    </li>
+                </ol>
+            </div>
+        </section>
     </div>
 
+    <footer class="footers">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>Hope</h2>
+                <p class="tagline">Making your life easier with our services</p>
+                <div class="social-icons">
+
+                </div>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../html/generated/service.html">Service</a></li>
+                    <li><a href="#ewrfsdsdfsdfsd">Contact</a></li>
+                    <li><a href="../html/generated/help.html">Help</a></li>
+                </ul>
+            </div>
+            <div class="footer-services">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="../html/generated/service.html">Service 1</a></li>
+                    <li><a href="../html/generated/service.html">Service 2</a></li>
+                    <li><a href="../html/generated/service.html">Service 3</a></li>
+                    <li><a href="../html/generated/service.html">Service 4</a></li>
+                    <li><a href="../html/generated/service.html">Service 5</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact" id="ewrfsdsdfsdfsd">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>info@example.com</li>
+                    <li> +1 (123) 456-7890</li>
+                    <li>123 Street, City</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Hope. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+
+
+    <script src="../js/bootstrap.js"></script>
 
 </body>
 

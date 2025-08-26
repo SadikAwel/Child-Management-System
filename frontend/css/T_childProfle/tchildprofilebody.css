@@ -1,16 +1,187 @@
-body {
-  height: 200px !important;
-  background-color: #ffffffe4;
+.mainbodyasdf {
+  height: fit-content;
+  gap: 75px;
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
+
+.class-container {
+  max-width: 100% !important;
+}
+
+.middleTitle {
+  max-width: 100vw;
+}
+.Grade-container {
+  max-width: 100vw;
+}
+
+@media (max-width: 900px) {
+  .mainbodyasdf {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .mainmassageplaceforchild {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    background-color: red;
+    align-items: center;
+    margin: auto;
+  }
+
+  .contact-container {
+    display: flex;
+
+    width: 100% !important;
+    background-color: #fcfcfb2e;
+    align-items: center;
+    box-shadow: -1px -2px 10px black;
+  }
+
+  .chat-container {
+    position: relative;
+    min-width: 119%;
+    left: 60px;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  .goost {
+    display: none;
+  }
+
+  .chat-header {
+    background: linear-gradient(rgb(25, 47, 67), rgb(23, 117, 134));
+    color: white;
+    display: flex;
+    align-items: center;
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  }
+
+  .chat-header h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  .message-area {
+    flex-grow: 2;
+    overflow-y: auto;
+    display: flex;
+    min-width: 290px;
+    flex-direction: column;
+    background-color: #e5e5e5;
+    background-image: linear-gradient(45deg, #f0f0f0 25%, transparent 25%),
+      linear-gradient(-45deg, transparent 75%, #f0f0f0 75%);
+    background-size: 20px 20px;
+    background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+  }
+
+  .message-bubble {
+    max-width: 100%;
+    padding: 1.8rem 1.2rem;
+    border-radius: 18px;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: #333;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  .message-answer {
+    align-self: flex-start;
+    background-color: #5d9cec;
+    color: white;
+    border-bottom-right-radius: 4px;
+    height: 12%;
+  }
+
+  .sent-message {
+    align-self: flex-end;
+    background-color: #5d9cec;
+    color: white;
+    border-bottom-right-radius: 4px;
+  }
+
+  .received-message {
+    align-self: flex-start;
+    background-color: #ffffff;
+    color: #333;
+    border-bottom-left-radius: 4px;
+  }
+
+  .message-timestamp {
+    font-size: 0.75rem;
+    color: #7f8c8d;
+    margin-top: 0.5rem;
+    text-align: right;
+    opacity: 0.8;
+  }
+
+  .chat-input {
+    padding: 1rem;
+    border-top: 1px solid #e0e0e0;
+    display: flex;
+    align-items: center;
+    background-color: #f8f8f8;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+  }
+
+  .chat-input input[type="text"] {
+    flex-grow: 1;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .chat-input input[type="text"]:focus {
+    border-color: #5d9cec;
+    box-shadow: 0 0 0 3px rgba(93, 156, 236, 0.2);
+  }
+
+  .chat-input button {
+    margin-left: 0.5rem;
+    background-color: #5d9cec;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    height: 44px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+  }
+
+  .chat-input button:hover {
+    background-color: #4a84d4;
+    transform: scale(1.05);
+  }
+}
+
 .profmessageplace {
   margin-top: 4%;
   width: 100%;
-  height: 100vh;
+  height: fit-content;
   background: linear-gradient(rgba(44, 92, 144, 0.896), rgb(37, 31, 84));
   box-shadow: 12px 3px 23px black;
   padding-top: 34px;
-  display: grid;
-  grid-template-rows: auto 15%;
 }
 
 .mainmassageplaceforchild {
@@ -21,8 +192,11 @@ body {
 .buttonplaceforchild {
   background-color: rgb(255, 255, 255);
   width: 90%;
+  margin-top: 100px;
+  max-height: 90px;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 60px;
   gap: 34px;
   align-items: center;
   display: flex;

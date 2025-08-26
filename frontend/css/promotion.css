@@ -1,271 +1,586 @@
-body {
-  font-family: "Times New Roman", Times, serif;
+/* About us section */
+.about-us-section {
+  background: linear-gradient(135deg, rgba(66, 60, 69, 0.9), rgba(66, 60, 69, 0.7));
+  width: 100%;
+  min-height: 50vh;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  display: flex;
+  margin: 40px 0;
+  border-radius: 15px;
+  overflow: hidden;
 }
-#middleTitle {
-  position: relative;
-  top: 130px;
-  font-size: 3.4rem;
-  font-family: "Times New Roman", Times, serif;
+
+.about-us-section .about-us-title {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background: rgba(48, 69, 75, 0.8);
+}
+
+.about-us-middle {
+  background-color: rgb(48, 69, 75);
+  padding: 20px 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
   text-align: center;
-  color: rgb(255, 255, 255);
 }
+
+.about-us-middle h2 {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.about-us-section .about-us-description {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background: rgba(66, 60, 69, 0.6);
+}
+
+.about-us-description p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: white;
+  line-height: 1.8;
+  text-align: center;
+  max-width: 600px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  #middleTitle {
+    font-size: 2rem;
+    margin: 40px 0 30px 0;
+  }
+
+  .promotion-container {
+    padding: 15px;
+    gap: 15px;
+    margin: 0 5px;
+  }
+
+  .promotion-container > div {
+    flex: 0 0 250px;
+    height: fit-content;
+  }
+
+  .service-header h2 {
+    font-size: 2rem;
+  }
+
+  .service-content {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .service-content div {
+    height: 250px;
+  }
+
+  .service-content div h3 {
+    font-size: 1.3rem;
+  }
+
+  .about-us-section {
+    flex-direction: column;
+  }
+
+  .about-us-section .about-us-title,
+  .about-us-section .about-us-description {
+    flex: none;
+    padding: 30px 20px;
+  }
+
+  .about-us-middle h2 {
+    font-size: 1.8rem;
+  }
+
+  .about-us-description p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #middleTitle {
+    font-size: 1.8rem;
+    margin: 30px 0 20px 0;
+  }
+
+  .promotion-container > div {
+    flex: 0 0 220px;
+    height: 280px;
+  }
+
+  .service-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .service-content {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .service-content div {
+    height: 220px;
+  }
+
+  .service-content div h3 {
+    font-size: 1.2rem;
+  }
+
+  .about-us-middle {
+    padding: 15px 30px;
+  }
+
+  .about-us-middle h2 {
+    font-size: 1.6rem;
+  }
+
+  .about-us-description p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+} /* Middle title */
+#middleTitle {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 60px 0 40px 0;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Promotion container */
 .promotion-container {
   display: flex;
-  background: linear-gradient(rgba(20, 40, 55, 0.985), rgba(70, 72, 13, 0.268), rgba(49, 35, 83, 0.766));
-  height: 90vh;
-  box-shadow: -1px 1px 34px rgba(0, 0, 0, 0.573);
-  display: flex;
-  gap: 1.4vw;
-  border-radius: 20px;
-  padding-left: 20px;
-  overflow-x: scroll;
-  transition: all 3s ease;
+  background: linear-gradient(
+    135deg,
+    rgba(7, 13, 103, 0.853),
+    rgba(22, 79, 146, 0.3),
+    rgba(152, 166, 178, 0.344)
+  );
+  min-height: 50%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+  padding: 20px;
+  gap: 20px;
+  overflow-x: auto;
+  border-radius: 3px;
+  margin: 0 0px;
+  width: 100vw;
 }
 
 .promotion-container > div {
-  flex: 0 0 auto;
-  background: linear-gradient(rgb(23, 36, 66), rgba(37, 70, 96, 0.505), rgba(33, 63, 31, 0.478));
-  height: 60vh;
-  width: 35vh;
-  box-shadow: 1px 1px 34px rgba(0, 0, 0, 0.573);
-  margin-top: auto;
-  margin-bottom: 20px;
-  border-radius: 25px;
+  flex: 0 0 280px;
+  height: 390px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.promotion-container > div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.promotion-container > div:hover::before {
+  background: rgba(0, 0, 0, 0.1);
+}
+.promotion-container > div:hover {
+  border-radius: 0px;
+}
+.promotion-container > div p {
+  display: none;
+  text-align: center;
+  padding: 10px;
+  color: white;
+}
+.promotion-container > div:hover p {
+  display: block;
 }
 
 #prom-1 {
-  background: linear-gradient(
-      rgba(190, 203, 183, 0.296),
-      rgba(112, 113, 85, 0.368),
-      rgba(33, 63, 31, 0.275)
-    ),
+  background: linear-gradient(rgba(0, 0, 0, 0.034), rgba(0, 0, 0, 0.04)),
+    url("../gallery/profile/prom1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#prom-1:hover {
+  background: linear-gradient(rgba(17, 23, 77, 0.847), rgba(78, 75, 75, 0.819)),
     url("../gallery/profile/prom1.jpg");
   background-size: cover;
   background-position: center;
 }
 
 #prom-2 {
-  background: linear-gradient(
-      rgba(190, 203, 183, 0.296),
-      rgba(112, 113, 85, 0.368),
-      rgba(33, 63, 31, 0.275)
-    ),
+  background: linear-gradient(rgba(0, 0, 0, 0.034), rgba(0, 0, 0, 0.04)),
+    url("../gallery/profile/prom2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#prom-2:hover {
+  background: linear-gradient(rgba(17, 23, 77, 0.847), rgba(78, 75, 75, 0.819)),
     url("../gallery/profile/prom2.jpg");
   background-size: cover;
   background-position: center;
 }
 
 #prom-3 {
-  background: linear-gradient(
-      rgba(190, 203, 183, 0.296),
-      rgba(112, 113, 85, 0.368),
-      rgba(33, 63, 31, 0.275)
-    ),
+  background: linear-gradient(rgba(0, 0, 0, 0.034), rgba(0, 0, 0, 0.04)),
+    url("../gallery/profile/prom3.jpg");
+  background-size: cover;
+  background-position: center;
+}
+#prom-3:hover {
+  background: linear-gradient(rgba(17, 23, 77, 0.847), rgba(78, 75, 75, 0.819)),
     url("../gallery/profile/prom3.jpg");
   background-size: cover;
   background-position: center;
 }
 
 #prom-4 {
-  background: linear-gradient(
-      rgba(190, 203, 183, 0.296),
-      rgba(112, 113, 85, 0.368),
-      rgba(33, 63, 31, 0.275)
-    ),
+  background: linear-gradient(rgba(0, 0, 0, 0.034), rgba(0, 0, 0, 0.04)),
+    url("../gallery/profile/prom4.jpg");
+  background-size: cover;
+  background-position: center;
+}
+#prom-4:hover {
+  background: linear-gradient(rgba(17, 23, 77, 0.847), rgba(78, 75, 75, 0.819)),
     url("../gallery/profile/prom4.jpg");
   background-size: cover;
   background-position: center;
 }
 
 #prom-5 {
-  background: linear-gradient(
-      rgba(190, 203, 183, 0.296),
-      rgba(112, 113, 85, 0.368),
-      rgba(33, 63, 31, 0.275)
-    ),
+  background: linear-gradient(rgba(0, 0, 0, 0.034), rgba(0, 0, 0, 0.04)),
+    url("../gallery/profile/prom5.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#prom-5:hover {
+  background: linear-gradient(rgba(17, 23, 77, 0.847), rgba(78, 75, 75, 0.819)),
     url("../gallery/profile/prom5.jpg");
   background-size: cover;
   background-position: center;
 }
 
 #prom-6 {
-  background: linear-gradient(
-      rgba(190, 203, 183, 0.296),
-      rgba(112, 113, 85, 0.368),
-      rgba(33, 63, 31, 0.275)
-    ),
+  background: linear-gradient(rgba(0, 0, 0, 0.034), rgba(0, 0, 0, 0.04)),
     url("../gallery/profile/porm6.jpg");
   background-size: cover;
   background-position: center;
 }
 
+#prom-6:hover {
+  background: linear-gradient(rgba(17, 23, 77, 0.847), rgba(78, 75, 75, 0.819)),
+    url("../gallery/profile/prom6.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
 #prom-7 {
-  background: linear-gradient(
-      rgba(190, 203, 183, 0.296),
-      rgba(112, 113, 85, 0.368),
-      rgba(33, 63, 31, 0.275)
-    ),
+  background: linear-gradient(rgba(0, 0, 0, 0.034), rgba(0, 0, 0, 0.04)),
     url("../gallery/profile/prom7.png");
+  background-size: cover;
+  background-position: center;
+}
+#prom-7:hover {
+  background: linear-gradient(rgba(17, 23, 77, 0.847), rgba(78, 75, 75, 0.819)),
+    url("../gallery/profile/prom7.jpg");
   background-size: cover;
   background-position: center;
 }
 
 .promotion-container > div:hover {
-  /* margin-bottom: 50px; */
-  transform: translateY(-3px);
-  background: linear-gradient(
-    rgba(122, 89, 53, 0.368),
-    rgba(167, 105, 19, 0.374),
-    rgba(100, 143, 97, 0.653)
-  );
-  box-shadow: 1px 1px 34px rgba(135, 4, 4, 0.851);
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
 }
+
 .promotion-container > div:active {
-  /* margin-bottom: 50px; */
-  transform: translateY(-3px);
-  background: linear-gradient(
-    rgba(123, 108, 91, 0.368),
-    rgba(187, 139, 63, 0.692),
-    rgba(12, 38, 10, 0.341)
-  );
-  box-shadow: 1px 1px 34px rgba(244, 241, 241, 0.851);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Service container */
+.service-container {
+  background: linear-gradient(135deg, rgba(18, 38, 84, 0.952));
+  width: 100%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  margin: 60px 0;
+  padding: 40px 20px;
 }
 
 .service-header {
   text-align: center;
-  font-size: larger;
-  padding: 34px;
+  margin-bottom: 40px;
 }
 
-.service-container {
-  background: linear-gradient(rgba(36, 64, 85, 0.733), rgba(70, 72, 13, 0.268), rgba(35, 60, 83, 0.766));
+.service-header h2 {
+  font-size: 2.5rem;
+  color: white;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
 
-  height: fit-content;
-  width: 97.5vw;
-  box-shadow: 1px 1px 34px rgba(0, 0, 0, 0.258);
-  margin-top: 50px;
-  border-radius: 10px;
+.service-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 20px;
+}
+
+.service-content div {
+  height: 300px;
+  box-shadow: 0 2px 5px rgba(253, 248, 248, 0.3);
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
   display: flex;
-  flex-direction: column;
+  align-items: flex-end;
+  padding: 20px;
+  transition: 2s;
 }
-.service-container .service-content {
-  width: 97.5%;
-  display: flex;
-  flex-direction: row;
-  margin: 10px;
-  padding: 10px;
-  flex-wrap: wrap;
-}
-
-.service-container h3 {
+.service-content div p {
+  width: 100%;
+  height: 100%;
+  display: none;
   text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.service-content div h3 {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  z-index: 2;
+  position: relative;
+}
+
+.service-content div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(16, 22, 89, 0.895), rgba(0, 0, 0, 0.2));
 }
 
 #serv1 {
-  background: linear-gradient(
-      rgba(190, 203, 183, 0.296),
-      rgba(112, 113, 85, 0.368),
-      rgba(33, 63, 31, 0.275)
-    ),
-    url("../gallery/3d-bar-graph_1083198-567.avif");
+  background: url("../gallery/3d-bar-graph_1083198-567.avif");
   background-size: cover;
   background-position: center;
 }
 
 #serv2 {
-  background: linear-gradient(
-      rgba(190, 203, 183, 0.296),
-      rgba(112, 113, 85, 0.368),
-      rgba(33, 63, 31, 0.275)
-    ),
-    url("../gallery/kids-mobile-phone-child-tablet-600nw-2455567141.webp");
+  background: url("../gallery/kids-mobile-phone-child-tablet-600nw-2455567141.webp");
   background-size: cover;
   background-position: center;
 }
+
 #serv3 {
-  background: linear-gradient(
-      rgba(190, 203, 183, 0.296),
-      rgba(112, 113, 85, 0.368),
-      rgba(33, 63, 31, 0.275)
-    ),
-    url("../gallery/mentor-770x513.jpg");
+  background: url("../gallery/mentor-770x513.jpg");
   background-size: cover;
   background-position: center;
 }
 
 #serv4 {
-  background: linear-gradient(
-      rgba(190, 203, 183, 0.296),
-      rgba(112, 113, 85, 0.368),
-      rgba(33, 63, 31, 0.275)
-    ),
-    url("../gallery/profile/Super\ Mario.jpg");
+  background: url("../gallery/profile/Super\ Mario.jpg");
   background-size: cover;
   background-position: center;
 }
 
-.service-content div {
-  width: 300px;
-  height: 300px;
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.204);
-  border-radius: 10px;
-  margin: auto;
+.service-content div:hover {
+  transform: rotatex(180deg);
+  border-radius: 0px;
+  height: auto;
+
+  background: linear-gradient(rgb(77, 116, 166), rgb(10, 43, 82)) !important;
+}
+.service-content div:hover p {
+  transition: 2s;
+  color: rgba(255, 255, 255, 0.848);
+
+  transition-delay: 9s;
+  transform: rotateX(180deg);
+  display: block;
+}
+.service-content div:hover h3 {
+  display: none;
 }
 
-.service-content div:hover {
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.204);
-  transform: translateY(-23px);
-}
+/* About us section */
 .about-us-section {
-  background-color: rgba(0, 0, 0, 0.119);
+  background: linear-gradient(135deg, rgba(66, 60, 69, 0.9), rgba(66, 60, 69, 0.7));
   width: 100%;
-  height: 50vh;
-  box-shadow: -1px -1px 10px rgb(28, 29, 15);
+  min-height: 50vh;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   display: flex;
-  margin-top: 34px;
-  align-items: center;
+  margin: 40px 0;
+  border-radius: 3px;
+  overflow: hidden;
 }
 
 .about-us-section .about-us-title {
-  position: relative;
   flex: 1;
-  height: 80%;
-  background-color: rgba(66, 60, 69, 0.907);
-  display: flex;
-  align-items: center;
-}
-
-.about-us-section .about-us-description {
-  position: relative;
-  flex: 3;
-  height: 80%;
-  background-color: rgba(66, 60, 69, 0.444);
-  display: flex;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 40px 20px;
+  background: rgba(44, 60, 112, 0.8);
 }
 
 .about-us-middle {
-  width: 300px;
-  height: 70px;
-  position: relative;
-  left: 10vw;
-  border-radius: 8px 8px 8px 8px;
-  background-color: rgb(48, 69, 75);
-  z-index: 1;
-  box-shadow: 2px 1px 12px rgb(202, 187, 187);
-}
-.about-us-middle h2 {
+  background-color: #0d1341f2;
+  padding: 20px 40px;
+  border-radius: 5px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
   text-align: center;
+}
+
+.about-us-middle h2 {
   color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.about-us-section .about-us-description {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background: #0d1341f2;
 }
 
 .about-us-description p {
-  font-size: larger;
-  font-weight: bold;
-  width: 60%;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: white;
+  line-height: 1.8;
+  text-align: center;
+  max-width: 600px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  #middleTitle {
+    display: relative;
+    font-size: 2rem;
+    margin: 40px 0 30px 0;
+  }
+
+  .promotion-container > div {
+    flex: 0 0 250px;
+    height: 300px;
+  }
+
+  .service-header h2 {
+    font-size: 2rem;
+  }
+
+  .service-content {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .service-content div {
+    height: 250px;
+  }
+
+  .service-content div h3 {
+    font-size: 1.3rem;
+  }
+
+  .about-us-section {
+    flex-direction: column;
+  }
+
+  .about-us-section .about-us-title,
+  .about-us-section .about-us-description {
+    flex: none;
+    padding: 30px 20px;
+  }
+
+  .about-us-middle h2 {
+    font-size: 1.8rem;
+  }
+
+  .about-us-description p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #middleTitle {
+    font-size: 1.8rem;
+    margin: 30px 0 20px 0;
+  }
+
+  .promotion-container {
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .promotion-container > div {
+    flex: 0 0 220px;
+    height: 280px;
+  }
+
+  .service-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .service-content {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .service-content div {
+    height: 220px;
+  }
+
+  .service-content div h3 {
+    font-size: 1.2rem;
+  }
+
+  .about-us-middle {
+    padding: 15px 30px;
+  }
+
+  .about-us-middle h2 {
+    font-size: 1.6rem;
+  }
+
+  .about-us-description p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
 }

@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/logIn/loginbody.css">
-    <title>Child managment system</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <title>Hope-Login Child</title>
 
     <style>
         .mainHeaderPage {
@@ -21,13 +22,13 @@
             background-size: 100%;
             box-shadow: 1px 1px 34px rgba(53, 42, 42, 0.573);
             border-radius: 10px;
-            gap: 150px;
+            gap: 50px;
         }
     </style>
 </head>
 
 <body>
-    <header id="header-email-box">
+    <header class="header-email-box">
         <span>email: childmanagmentsystem@gmail.com
 
         </span>
@@ -40,18 +41,24 @@
     <section class="mainHeaderPage ">
 
 
-        <div class="Logo">
-
-            <span>
-                <p>HOPE</p>
-            </span>
-
-            <ul>
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="#sdfewrwerfds">Contact</a></li>
-                <li><a href="../html/generated/help.html">Help</a></li>
-                <li><a href="../html/_signin.html">Sign in</a></li>
-            </ul>
+        <nav class="Logo navbar navbar-expand-md">
+            <div class="container">
+                <span>
+                    <p>HOPE</p>
+                </span>
+                <button class="toggle navbar-toggler" data-bs-toggle="collapse" data-bs-target="#childloginnav"
+                    title="child">
+                    <div class="navbar-toggler-icon"></div>
+                </button>
+                <div class="collapse navbar-collapse" id="childloginnav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a href="../../index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="#sdfewrwerfds" class="nav-link">Contact</a></li>
+                        <li class="nav-item"><a href="../html/generated/help.html" class="nav-link">Help</a></li>
+                        <li class="nav-item"><a href="../html/_signin.html" class="nav-link">Sign in</a></li>
+                    </ul>
+        </nav>
+        </div>
         </div>
 
 
@@ -72,7 +79,7 @@
                         <label for="password">Password</label>
                         <input type="password" id="password" name="password" placeholder="Enter Password" required>
                     </div>
-                    <a href="../html/_ChildPage.html" id="submit-login">Log In</a>
+                    <a href="../html/childfromdeep.html" id="submit-login">Log In</a>
                     <div class="signinbutton"><a href="./_signin.html">Create new account</a></div>
                 </div>
             </div>
@@ -128,6 +135,8 @@
 
 
 
+
+<script src="../js/bootstrap.js"></script>
 
 
 

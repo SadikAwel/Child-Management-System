@@ -1,9 +1,7 @@
 .mainHeaderPage {
-  height: 90vh;
+  height: fit-content;
   background: linear-gradient(rgba(27, 37, 64, 0.992), rgba(52, 51, 117, 0.384)),
     url("../../gallery/profile/beautiful-asian-girl-smiling_393744-2618.jpg");
-  display: flex;
-  flex-direction: column;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -14,23 +12,45 @@
   height: 6vh;
   background-color: rgba(84, 77, 91, 0.788);
 }
-#mainchildprofilepage {
-  display: grid;
-  grid-template-columns: 20% auto;
 
-  gap: 2px;
-  max-width: 100%;
+.search-form {
+  display: flex;
+  margin-left: 15%;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  overflow: hidden;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-input {
+  flex-grow: 1;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.search-button {
+  background: #fff;
+  border: none;
+  padding: 0 15px;
+  cursor: pointer;
+  color: #555;
+  transition: color 0.2s ease;
+}
+
+.search-button:hover {
+  color: #007bff;
+}
+
+.mainchildprofilepage {
+  position: relative;
 }
 
 #subprofilepage {
   width: 20%;
-  height: 80%;
-  background-color: rgba(127, 255, 212, 0.418);
-}
-
-#mainchildprofilepage > section {
-  width: 100%;
-  left: 133px;
+  height: fit-content;
 }
 
 .profile-card {
@@ -91,13 +111,12 @@
 }
 /*     dddddddddddddddddddddddddddddddddddddd */
 .academic-progress-container {
-  max-width: 95%;
-  width: 90%;
+  width: 100%;
   padding: 25px;
+  justify-content: center;
   background-color: #bbcbd592;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  margin-left: 50px;
 }
 .section {
   width: 1000%;
@@ -114,12 +133,11 @@
   margin-bottom: 40px;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  max-width: 100%;
+  width: 100%;
 }
 
 .academic-table {
-  width: 95%;
-  max-width: 90%;
+  width: 100%;
 
   border-spacing: 0;
   margin-bottom: 0;
@@ -199,9 +217,18 @@
 }
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
+@media (max-width: 902px) {
+  #subprofilepage {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+  }
+  .profile-card {
+    width: 80%;
+  }
   .academic-progress-container {
-    padding: 15px;
+    width: 100%;
   }
 
   .academic-table th,
@@ -211,7 +238,8 @@
   }
 
   .table-responsive {
-    width: 70%;
+    width: 100%;
+
     overflow-x: auto;
   }
 }

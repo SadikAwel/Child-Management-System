@@ -8,439 +8,445 @@
     <link rel="stylesheet" href="../css/healthcare/messagepage.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/searchpage/searchbody.css">
-    <title>Child managment system</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/parent/topmessage.css">
+    <title>Hope-Healthcare page</title>
 
 
 </head>
 
 <body>
 
-    <header id="header-email-box">
+    <header class="header-email-box z-5">
         <span>email: childmanagmentsystem@gmail.com</span>
     </header>
+    <button class="toggle navbar-toggler start-0" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+        <img src="../gallery/10055595.png" alt="navbar" class="imgfornavbar " title="Navigation"></button>
 
-    <div class="spacerforheader">d</div>
-    <section id="gridfixerforholepage">
-        <div>
+    <div class="spacerforheader"></div>
+    <section class="mainHeaderPage" style="margin-top: -22px !important;">
 
-            <aside id="insidesideframetext">
-                <ul>
-                    <li><a href="#rewrwesfdsdfsf">See child activity</a></li>
-                    <li><a href="#sdfsdfwerwerwe">contact</a></li>
-                    <li> <button onclick="window.history.back()">
-                            <h3>Back</h3>
-                        </button></li>
-                </ul>
-
-            </aside>
+        <div class="Logo navbar navbar-expand-md">
+            <div class="container">
+                <span>
+                    <p id="hopedisapper" class=" d-none">HOPE</p>
+                </span>
+                <button class="toggle navbar-toggler ms-auto" data-bs-toggle="collapse" data-bs-target="#parentpagenavz"
+                    title="Navigaiton">
+                    <div class="navbar-toggler-icon"></div>
+                </button>
+                <div class="collapse navbar-collapse" id="parentpagenavz">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="../../index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../html/generated/service.html">Service</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#dsfsdfwerfsdfsd">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../html/generated/help.html">Help</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../index.html">Login</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <main>
-            <section id="insidetheuppersection">
-
-                <div class="mainHeaderPage ">
-
-                    <div class="Logo">
-
-                        <span>
-                            <p>HOPE</p>
-                        </span>
-
-                        <nav>
-                            <ul>
-                                <li><a href="../../index.html">Home</a></li>
-                                <li><a href="../html/generated/service.html">Service</a></li>
-                                <li><a href="#dsfsdfwerfsdfsd">Contact</a></li>
-                                <li><a href="../html/generated/help.html">Help</a></li>
-                                <li><a href="../../index.html">Login</a></li>
-                            </ul>
-                        </nav>
-                    </div>
 
 
+        <div class="offcanvas offcanvas-start bg-favorite-color z-3" data-bs-scroll="true" data-bs-backdrop="false"
+            tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <div class="offcanvas-header z-3">
+                <h5 class="offcanvas-title z-3" id="offcanvasScrollingLabel">Navigation</h5>
+                <button type="button" class="btn-close z-3" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 
-                    <section>
+            </div>
+            <div class="offcanvas-body z-3" id="sideFrame">
+                <ul>
+                    <li><a href="#rewrwesfdsdfsf">See child activity</a>
+                        <hr>
+                    </li>
 
-                        <div id="messageBoxContainer">
-                            <div class="message-header">
-                                <h2>Message Box</h2>
-                                <button class="refresh-button">&#x21bb;</button>
-                            </div>
-                            <div class="message-list">
-                                <div>
-                                    <div class="miniprofile">
-                                        <img src="https://placehold.co/50x50/3498db/ffffff?text=T1"
-                                            alt="Teacher's Profile Picture">
-                                    </div>
-                                    <div class="miniMessage">
-                                        <h4>Ms. Davis (Teacher)</h4>
-                                        <p>Just a quick note that your child is doing excellent in their class projects!
-                                        </p>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="miniprofile">
-                                        <img src="https://placehold.co/50x50/e74c3c/ffffff?text=D1"
-                                            alt="Dr. Wilson's Profile Picture">
-                                    </div>
-                                    <div class="miniMessage">
-                                        <h4>Dr. Wilson (Healthcare)</h4>
-                                        <p>Reminder about your child's annual check-up next Tuesday at 2 PM.</p>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="miniprofile">
-                                        <img src="https://placehold.co/50x50/2ecc71/ffffff?text=T2"
-                                            alt="Mr. Chen's Profile Picture">
-                                    </div>
-                                    <div class="miniMessage">
-                                        <h4>Mr. Chen (Teacher)</h4>
-                                        <p>Your child has made great progress on their reading level this week.</p>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="miniprofile">
-                                        <img src="https://placehold.co/50x50/f39c12/ffffff?text=H1"
-                                            alt="Clinic's Profile Picture">
-                                    </div>
-                                    <div class="miniMessage">
-                                        <h4>Children's Clinic</h4>
-                                        <p>A new immunization record has been added to your child's file.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                </div>
+                    <li><a href="#sdfsdfwerwerwe">contact</a>
+                        <hr>
+                    </li>
+                    <li> <button onclick="window.history.back()">Back</button></li>
+                </ul>
+            </div>
+        </div>
 
-            </section>
 
-            <section class="childActivity">
-
+        <div id="messageBoxContainer">
+            <div class="message-header">
+                <h2>Message Box</h2>
+                <button class="refresh-button">&#x21bb;</button>
+            </div>
+            <div class="message-list">
                 <div>
-
-                    <main id="mainbodyforsearch">
-                        <div class="container">
-                            <div class="search-header">
-                                <h2>Search Students</h2>
-                            </div>
-
-                            <div class="search-box">
-                                <input type="text" placeholder="Search students...">
-                            </div>
-
-                            <div class="student-list">
-                                <a href="#" class="student-card">
-                                    <div class="profile-pic">
-                                        <img src="../gallery/profile/OIP.webp" alt="Abebe">
-                                    </div>
-                                    <div class="student-info">
-                                        <div class="student-name">Abebe Kebede</div>
-                                        <div class="student-details">
-                                            <span class="student-grade">Grade 7</span>
-                                            <span class="student-age">13 years</span>
-                                            <span class="student-location">Addis Ababa</span>
-                                        </div>
-                                    </div>
-                                </a>
-
-                                <a href="#" class="student-card">
-                                    <div class="profile-pic">
-                                        <img src="../gallery/profile/large-portrait-little-girl-years-old-brown-eyes-dark-blond-hair-two-tails-light-sweater-multi-colored-polka-dots-199065591.webp"
-                                            alt="Meron">
-                                    </div>
-                                    <div class="student-info">
-                                        <div class="student-name">Meron Tesfaye</div>
-                                        <div class="student-details">
-                                            <span class="student-grade">Grade 5</span>
-                                            <span class="student-age">11 years</span>
-                                            <span class="student-location">Bahir Dar</span>
-                                        </div>
-                                    </div>
-                                </a>
-
-                                <a href="#" class="student-card">
-                                    <div class="profile-pic">
-                                        <img src="../gallery/profile/OIP (1).webp" alt="Tewodros">
-                                    </div>
-                                    <div class="student-info">
-                                        <div class="student-name">Tewodros Assefa</div>
-                                        <div class="student-details">
-                                            <span class="student-grade">Grade 6</span>
-                                            <span class="student-age">12 years</span>
-                                            <span class="student-location">Gondar</span>
-                                        </div>
-                                    </div>
-                                </a>
-
-                                <a href="#" class="student-card">
-                                    <div class="profile-pic">
-                                        <img src="../gallery/kids-using-gadgets-tablet-pc-600nw-1841220493.webp"
-                                            alt="Selam">
-                                    </div>
-                                    <div class="student-info">
-                                        <div class="student-name">Selamawit Girma</div>
-                                        <div class="student-details">
-                                            <span class="student-grade">Grade 4</span>
-                                            <span class="student-age">10 years</span>
-                                            <span class="student-location">Hawassa</span>
-                                        </div>
-                                    </div>
-                                </a>
-
-                                <a href="#" class="student-card">
-                                    <div class="profile-pic">
-                                        <img src="../gallery/profile/OIP (1).webp" alt="Yohannes">
-                                    </div>
-                                    <div class="student-info">
-                                        <div class="student-name">Yohannes Mekonnen</div>
-                                        <div class="student-details">
-                                            <span class="student-grade">Grade 3</span>
-                                            <span class="student-age">9 years</span>
-                                            <span class="student-location">Mekelle</span>
-                                        </div>
-                                    </div>
-                                </a>
-
-                                <a href="#" class="student-card">
-                                    <div class="profile-pic">
-                                        <img src="../gallery/profile/OIP.webp" alt="Alem">
-                                    </div>
-                                    <div class="student-info">
-                                        <div class="student-name">Alemnesh Demisse</div>
-                                        <div class="student-details">
-                                            <span class="student-grade">Grade 2</span>
-                                            <span class="student-age">8 years</span>
-                                            <span class="student-location">Dire Dawa</span>
-                                        </div>
-                                    </div>
-                                </a>
-
-                                <a href="#" class="student-card">
-                                    <div class="profile-pic">
-                                        <img src="../gallery/profile/beautiful-asian-girl-smiling_393744-2618.jpg"
-                                            alt="Dawit">
-                                    </div>
-                                    <div class="student-info">
-                                        <div class="student-name">Dawit Solomon</div>
-                                        <div class="student-details">
-                                            <span class="student-grade">Grade 1</span>
-                                            <span class="student-age">7 years</span>
-                                            <span class="student-location">Jimma</span>
-                                        </div>
-                                    </div>
-                                </a>
-
-                                <a href="#" class="student-card">
-                                    <div class="profile-pic">
-                                        <img src="../gallery/profile/asian-girls-education-happy-beautiful-asian-girl-is-smilling-generative-ai_947762-3120.avif"
-                                            alt="Eyerus">
-                                    </div>
-                                    <div class="student-info">
-                                        <div class="student-name">Eyerus Alemayehu</div>
-                                        <div class="student-details">
-                                            <span class="student-grade">Grade 6</span>
-                                            <span class="student-age">12 years</span>
-                                            <span class="student-location">Adama</span>
-                                        </div>
-                                    </div>
-                                </a>
-
-                                <a href="#" class="student-card">
-                                    <div class="profile-pic">
-                                        <img src="../gallery/profile/large-portrait-little-girl-years-old-brown-eyes-dark-blond-hair-two-tails-light-sweater-multi-colored-polka-dots-199065591.webp"
-                                            alt="Fikru">
-                                    </div>
-                                    <div class="student-info">
-                                        <div class="student-name">Fikru Hailu</div>
-                                        <div class="student-details">
-                                            <span class="student-grade">Grade 5</span>
-                                            <span class="student-age">11 years</span>
-                                            <span class="student-location">Debre Markos</span>
-                                        </div>
-                                    </div>
-                                </a>
-
-                                <a href="#" class="student-card">
-                                    <div class="profile-pic">
-                                        <img src="../gallery/profile/OIP (1).webp" alt="Genet">
-                                    </div>
-                                    <div class="student-info">
-                                        <div class="student-name">Genet Ashenafi</div>
-                                        <div class="student-details">
-                                            <span class="student-grade">Grade 4</span>
-                                            <span class="student-age">10 years</span>
-                                            <span class="student-location">Arba Minch</span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="action-buttons">
-                                <button class="btn btn-prev">Previous</button>
-                                <button class="btn btn-next">Next</button>
-                            </div>
-                        </div>
-                    </main>
-                </div>
-                <div id="rewrwesfdsdfsf">
-                    <div>
-                        <h2>Academic Progress</h2>
+                    <div class="miniprofile">
+                        <img src="https://placehold.co/50x50/3498db/ffffff?text=T1" alt="Teacher's Profile Picture">
                     </div>
-                    <div>
-                        <table class="academic-table">
-                            <thead>
-                                <tr>
-                                    <th colspan="2">Course Name</th>
-                                    <th>Class Activity</th>
-                                    <th>Homework</th>
-                                    <th colspan="2">Exam</th>
-                                    <th>Progress Indicator</th>
-                                </tr>
-                                <tr>
-                                    <td colspan="2">Amharic</td>
-                                    <td>34%</td>
-                                    <td>76%</td>
-                                    <td>34%</td>
-                                    <td>87%</td>
-                                    <td><input type="range" title="range indicator"></td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2">English</td>
-                                    <td>34%</td>
-                                    <td>76%</td>
-                                    <td>34%</td>
-                                    <td>87%</td>
-                                    <td><input type="range" title="range indicator"></td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2">Maths</td>
-                                    <td>34%</td>
-                                    <td>76%</td>
-                                    <td>34%</td>
-                                    <td>87%</td>
-                                    <td><input type="range" title="range indicator"></td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2">Art</td>
-                                    <td>34%</td>
-                                    <td>76%</td>
-                                    <td>34%</td>
-                                    <td>87%</td>
-                                    <td><input type="range" title="range indicator"></td>
-                                </tr>
-                            </thead>
-                        </table>
-                    </div>
-                    <div>
-                        <section>
-                            <h2>Health Status</h2>
-
-                            <div>
-                                <input type="text" title="name" id="inputtextfordescripition">
-                            </div>
-                        </section>
+                    <div class="miniMessage">
+                        <h4>Ms. Davis (Teacher)</h4>
+                        <p>Just a quick note that your child is doing excellent in their class projects!
+                        </p>
                     </div>
                 </div>
-                </div>
-            </section>
-            <section class="profmessageplace">
-
-
-
-                <div class="mainmassageplaceforchild">
-
-
-                    <div class="chat-container" id="sdfsdfwerwerwe">
-                        <div class="chat-header">
-
-                            <h2>Dr. Clark</h2>
-                        </div>
-                        <div class="message-area">
-                            <div class="message-bubble received-message">
-                                Hello, thanks for coming in today. I wanted to follow up on the recent test
-                                results for your child.
-                                <div class="message-timestamp">10:05 AM</div>
-                            </div>
-                            <div class="message-bubble sent-message">
-                                Hi Dr. Clark. Thank you for the update. Is everything okay?
-                                <div class="message-timestamp">10:06 AM</div>
-                            </div>
-                            <div class="message-bubble received-message">
-                                Yes, all the results look normal and there is no cause for concern. We'll simply
-                                schedule a
-                                follow-up in
-                                six months to monitor their progress.
-                                <div class="message-timestamp">10:07 AM</div>
-                            </div>
-                        </div>
-                        <div class="chat-input">
-                            <input type="text" placeholder="Write a message...">
-                            <button>&raquo;</button>
-                        </div>
-
-
-
+                <div>
+                    <div class="miniprofile">
+                        <img src="https://placehold.co/50x50/e74c3c/ffffff?text=D1" alt="Dr. Wilson's Profile Picture">
+                    </div>
+                    <div class="miniMessage">
+                        <h4>Dr. Wilson (Healthcare)</h4>
+                        <p>Reminder about your child's annual check-up next Tuesday at 2 PM.</p>
                     </div>
                 </div>
-                <div class="buttonplaceforchild">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <button onclick="window.history.back()">back</button>
-                </div>
-
-
-            </section>
-
-
-            <footer class="footers">
-                <div class="footer-content">
-                    <div class="footer-logo">
-                        <h2>Hope</h2>
-                        <p class="tagline">Making your life easier with our services</p>
-                        <div class="social-icons">
-
-                        </div>
+                <div>
+                    <div class="miniprofile">
+                        <img src="https://placehold.co/50x50/2ecc71/ffffff?text=T2" alt="Mr. Chen's Profile Picture">
                     </div>
-                    <div class="footer-links">
-                        <h3>Quick Links</h3>
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Service</a></li>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#dsfsdfwerfsdfsd">Contact</a></li>
-                            <li><a href="#">Help</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-services">
-                        <h3>Services</h3>
-                        <ul>
-                            <li><a href="../html/generated/service.html">Service 1</a></li>
-                            <li><a href="../html/generated/service.html">Service 2</a></li>
-                            <li><a href="../html/generated/service.html">Service 3</a></li>
-                            <li><a href="../html/generated/service.html">Service 4</a></li>
-                            <li><a href="../html/generated/service.html">Service 5</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-contact">
-                        <h3 id="dsfsdfwerfsdfsd">Contact Us</h3>
-                        <ul>
-                            <li>info@example.com</li>
-                            <li> +1 (123) 456-7890</li>
-                            <li>123 Street, City</li>
-                        </ul>
+                    <div class="miniMessage">
+                        <h4>Mr. Chen (Teacher)</h4>
+                        <p>Your child has made great progress on their reading level this week.</p>
                     </div>
                 </div>
-                <div class="footer-bottom">
-                    <p>&copy; 2025 Hope. All rights reserved.</p>
+                <div>
+                    <div class="miniprofile">
+                        <img src="https://placehold.co/50x50/f39c12/ffffff?text=H1" alt="Clinic's Profile Picture">
+                    </div>
+                    <div class="miniMessage">
+                        <h4>Children's Clinic</h4>
+                        <p>A new immunization record has been added to your child's file.</p>
+                    </div>
                 </div>
-            </footer>
+            </div>
+        </div>
 
-        </main>
+
     </section>
+
+    <section class="childActivity  d-md-flex m-auto-md" style="width: 95% !important;">
+
+        <div style=" flex: 1">
+
+            <main id="mainbodyforsearch" style="max-width: 400px; flex:1">
+                <div class="container">
+                    <div class="search-header">
+                        <h2>Search Students</h2>
+                    </div>
+
+                    <div class="search-box">
+                        <input type="text" placeholder="Search students...">
+                    </div>
+
+                    <div class="student-list">
+                        <a href="#" class="student-card">
+                            <div class="profile-pic">
+                                <img src="../gallery/profile/OIP.webp" alt="Abebe">
+                            </div>
+                            <div class="student-info">
+                                <div class="student-name">Abebe Kebede</div>
+                                <div class="student-details">
+                                    <span class="student-grade">Grade 7</span>
+                                    <span class="student-age">13 years</span>
+                                    <span class="student-location">Addis Ababa</span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="student-card">
+                            <div class="profile-pic">
+                                <img src="../gallery/profile/large-portrait-little-girl-years-old-brown-eyes-dark-blond-hair-two-tails-light-sweater-multi-colored-polka-dots-199065591.webp"
+                                    alt="Meron">
+                            </div>
+                            <div class="student-info">
+                                <div class="student-name">Meron Tesfaye</div>
+                                <div class="student-details">
+                                    <span class="student-grade">Grade 5</span>
+                                    <span class="student-age">11 years</span>
+                                    <span class="student-location">Bahir Dar</span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="student-card">
+                            <div class="profile-pic">
+                                <img src="../gallery/profile/OIP (1).webp" alt="Tewodros">
+                            </div>
+                            <div class="student-info">
+                                <div class="student-name">Tewodros Assefa</div>
+                                <div class="student-details">
+                                    <span class="student-grade">Grade 6</span>
+                                    <span class="student-age">12 years</span>
+                                    <span class="student-location">Gondar</span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="student-card">
+                            <div class="profile-pic">
+                                <img src="../gallery/kids-using-gadgets-tablet-pc-600nw-1841220493.webp" alt="Selam">
+                            </div>
+                            <div class="student-info">
+                                <div class="student-name">Selamawit Girma</div>
+                                <div class="student-details">
+                                    <span class="student-grade">Grade 4</span>
+                                    <span class="student-age">10 years</span>
+                                    <span class="student-location">Hawassa</span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="student-card">
+                            <div class="profile-pic">
+                                <img src="../gallery/profile/OIP (1).webp" alt="Yohannes">
+                            </div>
+                            <div class="student-info">
+                                <div class="student-name">Yohannes Mekonnen</div>
+                                <div class="student-details">
+                                    <span class="student-grade">Grade 3</span>
+                                    <span class="student-age">9 years</span>
+                                    <span class="student-location">Mekelle</span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="student-card">
+                            <div class="profile-pic">
+                                <img src="../gallery/profile/OIP.webp" alt="Alem">
+                            </div>
+                            <div class="student-info">
+                                <div class="student-name">Alemnesh Demisse</div>
+                                <div class="student-details">
+                                    <span class="student-grade">Grade 2</span>
+                                    <span class="student-age">8 years</span>
+                                    <span class="student-location">Dire Dawa</span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="student-card">
+                            <div class="profile-pic">
+                                <img src="../gallery/profile/beautiful-asian-girl-smiling_393744-2618.jpg" alt="Dawit">
+                            </div>
+                            <div class="student-info">
+                                <div class="student-name">Dawit Solomon</div>
+                                <div class="student-details">
+                                    <span class="student-grade">Grade 1</span>
+                                    <span class="student-age">7 years</span>
+                                    <span class="student-location">Jimma</span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="student-card">
+                            <div class="profile-pic">
+                                <img src="../gallery/profile/asian-girls-education-happy-beautiful-asian-girl-is-smilling-generative-ai_947762-3120.avif"
+                                    alt="Eyerus">
+                            </div>
+                            <div class="student-info">
+                                <div class="student-name">Eyerus Alemayehu</div>
+                                <div class="student-details">
+                                    <span class="student-grade">Grade 6</span>
+                                    <span class="student-age">12 years</span>
+                                    <span class="student-location">Adama</span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="student-card">
+                            <div class="profile-pic">
+                                <img src="../gallery/profile/large-portrait-little-girl-years-old-brown-eyes-dark-blond-hair-two-tails-light-sweater-multi-colored-polka-dots-199065591.webp"
+                                    alt="Fikru">
+                            </div>
+                            <div class="student-info">
+                                <div class="student-name">Fikru Hailu</div>
+                                <div class="student-details">
+                                    <span class="student-grade">Grade 5</span>
+                                    <span class="student-age">11 years</span>
+                                    <span class="student-location">Debre Markos</span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="student-card">
+                            <div class="profile-pic">
+                                <img src="../gallery/profile/OIP (1).webp" alt="Genet">
+                            </div>
+                            <div class="student-info">
+                                <div class="student-name">Genet Ashenafi</div>
+                                <div class="student-details">
+                                    <span class="student-grade">Grade 4</span>
+                                    <span class="student-age">10 years</span>
+                                    <span class="student-location">Arba Minch</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="action-buttons">
+                        <button class="btn btn-prev">Previous</button>
+                        <button class="btn btn-next">Next</button>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <div id="rewrwesfdsdfsf" style="flex: 2">
+            <div>
+                <h2>Academic Progress</h2>
+            </div>
+            <div>
+                <table class=" academic-table" style="width: 100% !important;">
+                    <thead>
+                        <tr>
+                            <th colspan=" 2">Course Name</th>
+                            <th>Class Activity</th>
+                            <th>Homework</th>
+                            <th colspan="2">Exam</th>
+                            <th>Progress Indicator</th>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Amharic</td>
+                            <td>34%</td>
+                            <td>76%</td>
+                            <td>34%</td>
+                            <td>87%</td>
+                            <td><input type="range" title="range indicator"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">English</td>
+                            <td>34%</td>
+                            <td>76%</td>
+                            <td>34%</td>
+                            <td>87%</td>
+                            <td><input type="range" title="range indicator"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Maths</td>
+                            <td>34%</td>
+                            <td>76%</td>
+                            <td>34%</td>
+                            <td>87%</td>
+                            <td><input type="range" title="range indicator"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Art</td>
+                            <td>34%</td>
+                            <td>76%</td>
+                            <td>34%</td>
+                            <td>87%</td>
+                            <td><input type="range" title="range indicator"></td>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            <div>
+                <section>
+                    <h2>Health Status</h2>
+
+                    <div>
+                        <textarea title="textarea" id="inputtextfordescripition"></textarea>
+                    </div>
+                </section>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="profmessageplace">
+
+
+
+        <div class="mainmassageplaceforchild">
+
+
+            <div class="chat-container" id="sdfsdfwerwerwe">
+                <div class="chat-header">
+
+                    <h2>Dr. Clark</h2>
+                </div>
+                <div class="message-area">
+                    <div class="message-bubble received-message">
+                        Hello, thanks for coming in today. I wanted to follow up on the recent test
+                        results for your child.
+                        <div class="message-timestamp">10:05 AM</div>
+                    </div>
+                    <div class="message-bubble sent-message">
+                        Hi Dr. Clark. Thank you for the update. Is everything okay?
+                        <div class="message-timestamp">10:06 AM</div>
+                    </div>
+                    <div class="message-bubble received-message">
+                        Yes, all the results look normal and there is no cause for concern. We'll simply
+                        schedule a
+                        follow-up in
+                        six months to monitor their progress.
+                        <div class="message-timestamp">10:07 AM</div>
+                    </div>
+                </div>
+                <div class="chat-input">
+                    <input type="text" placeholder="Write a message...">
+                    <button>&raquo;</button>
+                </div>
+
+
+
+            </div>
+        </div>
+        <div class="buttonplaceforchild d-none d-md-flex mt-3">
+            <div></div>
+            <div></div>
+            <div></div>
+            <button onclick="window.history.back()">back</button>
+        </div>
+
 
     </section>
 
 
+    <footer class="footers">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>Hope</h2>
+                <p class="tagline">Making your life easier with our services</p>
+                <div class="social-icons">
+
+                </div>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#dsfsdfwerfsdfsd">Contact</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+            <div class="footer-services">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="../html/generated/service.html">Service 1</a></li>
+                    <li><a href="../html/generated/service.html">Service 2</a></li>
+                    <li><a href="../html/generated/service.html">Service 3</a></li>
+                    <li><a href="../html/generated/service.html">Service 4</a></li>
+                    <li><a href="../html/generated/service.html">Service 5</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3 id="dsfsdfwerfsdfsd">Contact Us</h3>
+                <ul>
+                    <li>info@example.com</li>
+                    <li> +1 (123) 456-7890</li>
+                    <li>123 Street, City</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Hope. All rights reserved.</p>
+        </div>
+    </footer>
+
+    </main>
+    </section>
+
+    </section>
+
+    <script src="../js/bootstrap.js"></script>
 </body>
 
 </html>

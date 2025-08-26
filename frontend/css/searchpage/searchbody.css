@@ -5,42 +5,42 @@
   font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-body {
-  background-color: #f0f2f5;
-  color: #333;
-}
 .spacerforheader {
-  height: 2vh;
+  height: -1vh !important;
   background-color: rgba(84, 77, 91, 0);
 }
+
 #mainbodyforsearch {
-  height: 87%;
+  height: fit-content;
 }
 
 .mainHeaderPage {
-  height: 90vh;
+  height: fit-content;
   background: linear-gradient(rgba(8, 24, 32, 0.781), rgba(16, 15, 15, 0.868)),
     url("../../gallery/mentor-770x513.jpg");
   display: flex;
   flex-direction: column;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   box-shadow: 1px 1px 34px rgba(53, 42, 42, 0.573);
   border-radius: 10px;
+  margin-top: -80px !important;
 }
 
 .container {
   max-width: 600px;
-  margin: 0 auto;
+  margin: 0px auto;
   background-color: white;
   border-radius: 12px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  width: 95%;
 }
 
 .search-header {
   padding: 15px;
+  width: 100%;
   background-color: #2c3e50;
   color: white;
   position: relative;
@@ -93,7 +93,7 @@ body {
 }
 
 .student-card:hover {
-  background-color: #f5f5f5;
+  background-color: #95a4e875;
 }
 
 .profile-pic {
@@ -108,6 +108,7 @@ body {
   font-size: 20px;
   color: #555;
   overflow: hidden;
+  flex-shrink: 0;
 }
 
 .profile-pic img {
@@ -118,12 +119,16 @@ body {
 
 .student-info {
   flex: 1;
+  min-width: 0; /* Prevents flex item from overflowing */
 }
 
 .student-name {
   font-weight: 500;
   font-size: 16px;
   margin-bottom: 3px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .student-details {
@@ -140,6 +145,7 @@ body {
   background-color: #e3f2fd;
   color: #1976d2;
   font-weight: 500;
+  white-space: nowrap;
 }
 
 .student-age {
@@ -148,11 +154,15 @@ body {
   background-color: #e8f5e9;
   color: #2e7d32;
   font-weight: 500;
+  white-space: nowrap;
 }
 
 .student-location {
   display: flex;
   align-items: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .student-location::before {
@@ -166,6 +176,8 @@ body {
   padding: 15px;
   justify-content: space-between;
   border-top: 1px solid #eaeaea;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .btn {
@@ -176,6 +188,9 @@ body {
   font-weight: 500;
   cursor: pointer;
   transition: all 0.2s;
+  flex: 1;
+  min-width: 120px;
+  text-align: center;
 }
 
 .btn-prev {
@@ -194,4 +209,226 @@ body {
 
 .btn:active {
   transform: scale(0.98);
+}
+
+/* Responsive styles for tablets */
+@media (max-width: 1024px) {
+  .mainHeaderPage {
+    height: fit-content;
+  }
+
+  .container {
+    max-width: 90%;
+  }
+
+  .student-card {
+    padding: 10px 12px;
+  }
+
+  .profile-pic {
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+  }
+
+  .student-name {
+    font-size: 15px;
+  }
+
+  .student-details {
+    font-size: 13px;
+    gap: 6px;
+  }
+}
+
+/* Responsive styles for mobile and small tablets */
+@media (max-width: 768px) {
+  .mainHeaderPage {
+    height: fit-content;
+    border-radius: 8px;
+    margin: 0 8px;
+  }
+
+  .container {
+    width: 98%;
+    border-radius: 10px;
+  }
+
+  .search-header {
+    padding: 12px;
+  }
+
+  .search-header h2 {
+    font-size: 18px;
+  }
+
+  .search-box {
+    margin: 12px;
+  }
+
+  .search-box input {
+    padding: 10px 12px 10px 35px;
+    font-size: 14px;
+  }
+
+  .search-box::before {
+    left: 12px;
+    top: 10px;
+    font-size: 14px;
+  }
+
+  .student-list {
+    max-height: 350px;
+  }
+
+  .student-card {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .profile-pic {
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
+
+  .student-info {
+    width: 100%;
+  }
+
+  .student-details {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+
+/* Responsive styles for small mobile devices */
+@media (max-width: 480px) {
+  .mainHeaderPage {
+    height: fit-content;
+    margin: 0 5px;
+    border-radius: 6px;
+  }
+
+  .search-header {
+    padding: 10px;
+  }
+
+  .search-header h2 {
+    font-size: 16px;
+  }
+
+  .search-box {
+    margin: 10px;
+  }
+
+  .student-list {
+    max-height: 300px;
+  }
+
+  .profile-pic {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .student-name {
+    font-size: 14px;
+  }
+
+  .student-details {
+    font-size: 12px;
+  }
+
+  .student-grade,
+  .student-age {
+    padding: 1px 4px;
+    font-size: 12px;
+  }
+
+  .btn {
+    padding: 8px 16px;
+    font-size: 13px;
+    min-width: 100px;
+  }
+
+  .action-buttons {
+    padding: 10px;
+  }
+}
+
+/* Extra small devices (phones in portrait) */
+@media (max-width: 320px) {
+  .mainHeaderPage {
+    height: fit-content;
+  }
+
+  .search-header h2 {
+    font-size: 15px;
+  }
+
+  .search-box input {
+    padding: 8px 10px 8px 30px;
+    font-size: 13px;
+  }
+
+  .search-box::before {
+    left: 10px;
+    top: 8px;
+  }
+
+  .student-card {
+    padding: 8px;
+  }
+
+  .profile-pic {
+    width: 35px;
+    height: 35px;
+  }
+
+  .student-name {
+    font-size: 13px;
+  }
+}
+
+/* Orientation-specific adjustments for mobile */
+@media (max-height: 480px) and (orientation: landscape) {
+  .mainHeaderPage {
+    height: fit-content;
+  }
+
+  .student-list {
+    max-height: 200px;
+  }
+}
+
+/* High-resolution displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .search-box::before {
+    font-size: 18px;
+  }
+
+  .student-location::before {
+    font-size: 14px;
+  }
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+
+  .btn:active {
+    transform: none;
+  }
 }
