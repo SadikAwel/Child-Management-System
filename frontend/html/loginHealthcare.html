@@ -57,13 +57,16 @@
                         <h1>Login</h1>
                         <div class="form-group">
                             <label for="username">Username</label>
-                            <input type="email" id="username" name="username" placeholder="Enter Username" required>
+                            <input type="email" id="usernameh" name="username" placeholder="Enter Username" required>
                         </div>
                         <div class="form-group">
                             <label for="password">Password</label>
-                            <input type="password" id="password" name="password" placeholder="Enter Password" required>
+                            <input type="password" id="passwordh" name="password" placeholder="Enter Password" required>
                         </div>
-                        <a href="../html/healthcarepage.html" id="submit-login">LogIn</a>
+                        <button
+                            onclick="checklogin('../html/healthcarepage.html','usernameh', 'passwordh','healthcarepageloginerror')"
+                            id="submit-login">LogIn</button>
+                        <div class="palceforerror" id="healthcarepageloginerror"></div>
                         <div class="signinbutton"><a href="./signin.html">Create new account</a></div>
                     </div>
                 </div>
@@ -122,8 +125,8 @@
 
 <script src="../js/bootstrap.js"></script>
 
+<script src="../js/login.js"></script>
 </body>
 
 
 </html>
-

@@ -419,15 +419,13 @@
   transform: rotatex(180deg);
   border-radius: 0px;
   height: auto;
-
   background: linear-gradient(rgb(77, 116, 166), rgb(10, 43, 82)) !important;
 }
 .service-content div:hover p {
   transition: 2s;
   color: rgba(255, 255, 255, 0.848);
-
   transition-delay: 9s;
-  transform: rotateX(180deg);
+  transform: rotatex(180deg);
   display: block;
 }
 .service-content div:hover h3 {

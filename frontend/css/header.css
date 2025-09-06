@@ -17,10 +17,10 @@
 .imgfornavbar {
   position: fixed;
   left: 41px;
-  top: 10px;
+  top: 5px;
   width: 40px;
   height: auto;
-  background-color: #fedd00;
+  background-color: #201468;
   border-radius: 10px;
   transition: 0.2s;
   z-index: 5;

@@ -1,0 +1,22 @@
+CREATE TABLE mentor (
+    mentor_id INT AUTO_INCREMENT PRIMARY KEY,        
+    first_name VARCHAR(50) NOT NULL,                 
+    middle_name VARCHAR(50),                         
+    last_name VARCHAR(50) NOT NULL,                  
+    gender ENUM('Male', 'Female', 'Other'),
+    birth_date DATE NOT NULL,                        -- mentor’s birth date
+    age INT CHECK (age >= 18 AND age <= 100),        -- mentors must be adults
+    email VARCHAR(100) UNIQUE NOT NULL,              
+    phone_number VARCHAR(20) UNIQUE,
+    specialization VARCHAR(100) NOT NULL,            
+    experience_years INT CHECK (experience_years >= 1),  
+    highest_degree ENUM('BSc','MSc','PhD','Other') NOT NULL, 
+    institution VARCHAR(150),                        
+    bio TEXT,                                        
+    linkedin_url VARCHAR(200),                       
+    website_url VARCHAR(200),                       
+    
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,  
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP 
+                 ON UPDATE CURRENT_TIMESTAMP
+);

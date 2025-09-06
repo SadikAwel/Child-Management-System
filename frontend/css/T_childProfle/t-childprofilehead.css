@@ -20,6 +20,7 @@
   border-radius: 20px;
   overflow: hidden;
   max-width: 400px;
+  width: 70vw;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -184,6 +185,7 @@
 }
 
 .exam-col {
+  min-width: 0px;
   padding-left: 25px;
   padding-right: 25px;
 }

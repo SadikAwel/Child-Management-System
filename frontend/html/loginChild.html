@@ -73,13 +73,16 @@
                     <h1>Login</h1>
                     <div class="form-group">
                         <label for="username">Username</label>
-                        <input type="email" id="username" name="username" placeholder="Enter Username" required>
+                        <input type="email" id="usernamec" name="usernames" placeholder="Enter Username" required>
                     </div>
                     <div class="form-group">
                         <label for="password">Password</label>
-                        <input type="password" id="password" name="password" placeholder="Enter Password" required>
+                        <input type="password" id="passwordc" name="passwords" placeholder="Enter Password" required>
                     </div>
-                    <a href="../html/childfromdeep.html" id="submit-login">Log In</a>
+                    <button id="submit-login"
+                        onclick="checklogin('../html/childfromdeep.html', 'usernamec','passwordc','loginchilderror')">Log
+                        In</button>
+                    <div class="palceforerror" id="loginchilderror"></div>
                     <div class="signinbutton"><a href="./signin.html">Create new account</a></div>
                 </div>
             </div>
@@ -137,11 +140,9 @@
 
 
 <script src="../js/bootstrap.js"></script>
-
-
+<script src="../js/login.js"></script>
 
 </body>
 
 
 </html>
-
